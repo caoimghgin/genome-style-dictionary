@@ -62,7 +62,11 @@ module.exports = (brand, platform) => {
                 "files": [
                     {
                         "destination": "tokens.scss",
-                        "format": "scss/variables"
+                        "format": "scss/variables",
+                        "options": {
+                            "showFileHeader": false,
+                            "outputReferences": false
+                          }
                     }
                 ]
             },
