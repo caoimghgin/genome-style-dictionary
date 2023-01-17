@@ -1,0 +1,2004 @@
+[
+  {
+    "value": "#EA4335",
+    "type": "color",
+    "filePath": "tokens/brands/brand#3/color.json",
+    "isSource": true,
+    "original": {
+      "value": "#EA4335",
+      "type": "color"
+    },
+    "name": "gnm-alias-color-brand-primary",
+    "attributes": {
+      "category": "alias",
+      "type": "color",
+      "item": "brand",
+      "subitem": "primary",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "alias",
+      "color",
+      "brand",
+      "primary"
+    ]
+  },
+  {
+    "value": "#34A853",
+    "type": "color",
+    "filePath": "tokens/brands/brand#3/color.json",
+    "isSource": true,
+    "original": {
+      "value": "#34A853",
+      "type": "color"
+    },
+    "name": "gnm-alias-color-brand-secondary",
+    "attributes": {
+      "category": "alias",
+      "type": "color",
+      "item": "brand",
+      "subitem": "secondary",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "alias",
+      "color",
+      "brand",
+      "secondary"
+    ]
+  },
+  {
+    "value": "36px",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "36px"
+    },
+    "name": "gnm-avatar-size-xxsm",
+    "attributes": {
+      "category": "avatar",
+      "type": "size",
+      "item": "xxsm",
+      "metaData": {}
+    },
+    "path": [
+      "avatar",
+      "size",
+      "xxsm"
+    ]
+  },
+  {
+    "value": "72px",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "72px"
+    },
+    "name": "gnm-avatar-size-sm",
+    "attributes": {
+      "category": "avatar",
+      "type": "size",
+      "item": "sm",
+      "metaData": {}
+    },
+    "path": [
+      "avatar",
+      "size",
+      "sm"
+    ]
+  },
+  {
+    "value": "90px",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "90px"
+    },
+    "name": "gnm-avatar-size-md",
+    "attributes": {
+      "category": "avatar",
+      "type": "size",
+      "item": "md",
+      "metaData": {}
+    },
+    "path": [
+      "avatar",
+      "size",
+      "md"
+    ]
+  },
+  {
+    "value": "120px",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "120px"
+    },
+    "name": "gnm-avatar-size-lg",
+    "attributes": {
+      "category": "avatar",
+      "type": "size",
+      "item": "lg",
+      "metaData": {}
+    },
+    "path": [
+      "avatar",
+      "size",
+      "lg"
+    ]
+  },
+  {
+    "value": "150px",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "150px"
+    },
+    "name": "gnm-avatar-size-xlg",
+    "attributes": {
+      "category": "avatar",
+      "type": "size",
+      "item": "xlg",
+      "metaData": {}
+    },
+    "path": [
+      "avatar",
+      "size",
+      "xlg"
+    ]
+  },
+  {
+    "value": "50%",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "50%"
+    },
+    "name": "gnm-avatar-border-radius-circle",
+    "attributes": {
+      "category": "avatar",
+      "type": "border_radius",
+      "item": "circle",
+      "metaData": {}
+    },
+    "path": [
+      "avatar",
+      "border_radius",
+      "circle"
+    ]
+  },
+  {
+    "value": "12%",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "12%"
+    },
+    "name": "gnm-avatar-border-radius-squared",
+    "attributes": {
+      "category": "avatar",
+      "type": "border_radius",
+      "item": "squared",
+      "metaData": {}
+    },
+    "path": [
+      "avatar",
+      "border_radius",
+      "squared"
+    ]
+  },
+  {
+    "value": "#949494",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.gray_40.value}"
+    },
+    "name": "gnm-avatar-monogram-color-default",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_default",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_default"
+    ]
+  },
+  {
+    "value": "#ff4000",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#ff4000"
+    },
+    "name": "gnm-avatar-monogram-color-variant-1",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_1",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_1"
+    ]
+  },
+  {
+    "value": "#ff4278",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#ff4278"
+    },
+    "name": "gnm-avatar-monogram-color-variant-2",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_2",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_2"
+    ]
+  },
+  {
+    "value": "#ff8201",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#ff8201"
+    },
+    "name": "gnm-avatar-monogram-color-variant-3",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_3",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_3"
+    ]
+  },
+  {
+    "value": "#ffc831",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#ffc831"
+    },
+    "name": "gnm-avatar-monogram-color-variant-4",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_4",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_4"
+    ]
+  },
+  {
+    "value": "#00caa8",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#00caa8"
+    },
+    "name": "gnm-avatar-monogram-color-variant-5",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_5",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_5"
+    ]
+  },
+  {
+    "value": "#17d417",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#17d417"
+    },
+    "name": "gnm-avatar-monogram-color-variant-6",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_6",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_6"
+    ]
+  },
+  {
+    "value": "#b500e3",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#b500e3"
+    },
+    "name": "gnm-avatar-monogram-color-variant-7",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_7",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_7"
+    ]
+  },
+  {
+    "value": "#1ab0ff",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#1ab0ff"
+    },
+    "name": "gnm-avatar-monogram-color-variant-8",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_8",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_8"
+    ]
+  },
+  {
+    "value": "#2b8cfc",
+    "filePath": "tokens/globals/avatar/index.json",
+    "isSource": true,
+    "original": {
+      "value": "#2b8cfc"
+    },
+    "name": "gnm-avatar-monogram-color-variant-9",
+    "attributes": {
+      "category": "avatar",
+      "type": "monogram",
+      "item": "color_variant_9",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "avatar",
+      "monogram",
+      "color_variant_9"
+    ]
+  },
+  {
+    "value": "10px",
+    "filePath": "tokens/globals/base/index.json",
+    "isSource": true,
+    "original": {
+      "value": "10px"
+    },
+    "name": "gnm-base-border-radius",
+    "attributes": {
+      "category": "base",
+      "type": "border",
+      "item": "radius",
+      "metaData": {}
+    },
+    "path": [
+      "base",
+      "border",
+      "radius"
+    ]
+  },
+  {
+    "value": "10px",
+    "filePath": "tokens/globals/button/index.json",
+    "isSource": true,
+    "original": {
+      "value": "{base.border.radius.value}"
+    },
+    "name": "gnm-button-border-radius",
+    "attributes": {
+      "category": "button",
+      "type": "border",
+      "item": "radius",
+      "metaData": {}
+    },
+    "path": [
+      "button",
+      "border",
+      "radius"
+    ]
+  },
+  {
+    "value": "1px",
+    "filePath": "tokens/globals/button/index.json",
+    "isSource": true,
+    "original": {
+      "value": "1px"
+    },
+    "name": "gnm-button-border-width",
+    "attributes": {
+      "category": "button",
+      "type": "border",
+      "item": "width",
+      "metaData": {}
+    },
+    "path": [
+      "button",
+      "border",
+      "width"
+    ]
+  },
+  {
+    "value": "44px",
+    "filePath": "tokens/platforms/web/button.json",
+    "isSource": true,
+    "original": {
+      "value": "44px"
+    },
+    "name": "gnm-button-height",
+    "attributes": {
+      "category": "button",
+      "type": "height",
+      "metaData": {}
+    },
+    "path": [
+      "button",
+      "height"
+    ]
+  },
+  {
+    "value": "40px",
+    "filePath": "tokens/platforms/web/button.json",
+    "isSource": true,
+    "original": {
+      "value": "40px"
+    },
+    "name": "gnm-button-height-small",
+    "attributes": {
+      "category": "button",
+      "type": "height_small",
+      "metaData": {}
+    },
+    "path": [
+      "button",
+      "height_small"
+    ]
+  },
+  {
+    "value": "#EA4335",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-basic.json",
+    "isSource": true,
+    "original": {
+      "value": "{alias.color.brand.primary.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-primary",
+    "attributes": {
+      "category": "color",
+      "type": "primary",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "primary"
+    ]
+  },
+  {
+    "value": "#34A853",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-basic.json",
+    "isSource": true,
+    "original": {
+      "value": "{alias.color.brand.secondary.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-secondary",
+    "attributes": {
+      "category": "color",
+      "type": "secondary",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "secondary"
+    ]
+  },
+  {
+    "value": "#4a8c70",
+    "type": "color",
+    "comment": "look how this comment will appear in the generated files",
+    "filePath": "tokens/globals/color/color-basic.json",
+    "isSource": true,
+    "original": {
+      "value": "#4A8C70",
+      "type": "color",
+      "comment": "look how this comment will appear in the generated files"
+    },
+    "name": "gnm-color-green",
+    "attributes": {
+      "category": "color",
+      "type": "green",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "green"
+    ]
+  },
+  {
+    "value": "#14213d",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-basic.json",
+    "isSource": true,
+    "original": {
+      "value": "#14213D",
+      "type": "color"
+    },
+    "name": "gnm-color-blue",
+    "attributes": {
+      "category": "color",
+      "type": "blue",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "blue"
+    ]
+  },
+  {
+    "value": "#fca311",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-basic.json",
+    "isSource": true,
+    "original": {
+      "value": "#FCA311",
+      "type": "color"
+    },
+    "name": "gnm-color-yellow",
+    "attributes": {
+      "category": "color",
+      "type": "yellow",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "yellow"
+    ]
+  },
+  {
+    "value": "#bf0603",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-basic.json",
+    "isSource": true,
+    "original": {
+      "value": "#BF0603",
+      "type": "color"
+    },
+    "name": "gnm-color-red",
+    "attributes": {
+      "category": "color",
+      "type": "red",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "red"
+    ]
+  },
+  {
+    "value": "#4a8c70",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-features.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.green.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-feature-chat",
+    "attributes": {
+      "category": "color",
+      "type": "feature",
+      "item": "chat",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "feature",
+      "chat"
+    ]
+  },
+  {
+    "value": "#14213d",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-features.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.blue.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-feature-blog",
+    "attributes": {
+      "category": "color",
+      "type": "feature",
+      "item": "blog",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "feature",
+      "blog"
+    ]
+  },
+  {
+    "value": "#fca311",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-features.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.yellow.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-feature-shop",
+    "attributes": {
+      "category": "color",
+      "type": "feature",
+      "item": "shop",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "feature",
+      "shop"
+    ]
+  },
+  {
+    "value": "#bf0603",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-features.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.red.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-feature-settings",
+    "attributes": {
+      "category": "color",
+      "type": "feature",
+      "item": "settings",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "feature",
+      "settings"
+    ]
+  },
+  {
+    "value": "#000000",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-grayscale.json",
+    "isSource": true,
+    "original": {
+      "value": "#000",
+      "type": "color"
+    },
+    "name": "gnm-color-black",
+    "attributes": {
+      "category": "color",
+      "type": "black",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "black"
+    ]
+  },
+  {
+    "value": "#6a6a6a",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-grayscale.json",
+    "isSource": true,
+    "original": {
+      "value": "#6a6a6a",
+      "type": "color"
+    },
+    "name": "gnm-color-gray-60",
+    "attributes": {
+      "category": "color",
+      "type": "gray_60",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "gray_60"
+    ]
+  },
+  {
+    "value": "#949494",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-grayscale.json",
+    "isSource": true,
+    "original": {
+      "value": "#949494",
+      "type": "color"
+    },
+    "name": "gnm-color-gray-40",
+    "attributes": {
+      "category": "color",
+      "type": "gray_40",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "gray_40"
+    ]
+  },
+  {
+    "value": "#c4c4c4",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-grayscale.json",
+    "isSource": true,
+    "original": {
+      "value": "#c4c4c4",
+      "type": "color"
+    },
+    "name": "gnm-color-gray-24",
+    "attributes": {
+      "category": "color",
+      "type": "gray_24",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "gray_24"
+    ]
+  },
+  {
+    "value": "#e0e0e0",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-grayscale.json",
+    "isSource": true,
+    "original": {
+      "value": "#e0e0e0",
+      "type": "color"
+    },
+    "name": "gnm-color-gray-12",
+    "attributes": {
+      "category": "color",
+      "type": "gray_12",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "gray_12"
+    ]
+  },
+  {
+    "value": "#f6f6f6",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-grayscale.json",
+    "isSource": true,
+    "original": {
+      "value": "#f6f6f6",
+      "type": "color"
+    },
+    "name": "gnm-color-gray-3",
+    "attributes": {
+      "category": "color",
+      "type": "gray_3",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "gray_3"
+    ]
+  },
+  {
+    "value": "#EA4335",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-others.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.primary.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-action-primary",
+    "attributes": {
+      "category": "color",
+      "type": "action_primary",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "action_primary"
+    ]
+  },
+  {
+    "value": "#bf0603",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-others.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.red.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-action-destructive",
+    "attributes": {
+      "category": "color",
+      "type": "action_destructive",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "action_destructive"
+    ]
+  },
+  {
+    "value": "#e0e0e0",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-others.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.gray_12.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-border",
+    "attributes": {
+      "category": "color",
+      "type": "border",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "border"
+    ]
+  },
+  {
+    "value": "#4a8c70",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-others.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.green.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-user-authenticated",
+    "attributes": {
+      "category": "color",
+      "type": "user",
+      "item": "authenticated",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "user",
+      "authenticated"
+    ]
+  },
+  {
+    "value": "#949494",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-others.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.gray_40.value}",
+      "type": "color"
+    },
+    "name": "gnm-color-user-anonymous",
+    "attributes": {
+      "category": "color",
+      "type": "user",
+      "item": "anonymous",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "user",
+      "anonymous"
+    ]
+  },
+  {
+    "value": "#4867aa",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-socials.json",
+    "isSource": true,
+    "original": {
+      "value": "#4867aa",
+      "type": "color"
+    },
+    "name": "gnm-color-social-facebook",
+    "attributes": {
+      "category": "color",
+      "type": "social",
+      "item": "facebook",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "social",
+      "facebook"
+    ]
+  },
+  {
+    "value": "#1ab0ff",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-socials.json",
+    "isSource": true,
+    "original": {
+      "value": "#1ab0ff",
+      "type": "color"
+    },
+    "name": "gnm-color-social-twitter",
+    "attributes": {
+      "category": "color",
+      "type": "social",
+      "item": "twitter",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "social",
+      "twitter"
+    ]
+  },
+  {
+    "value": "#507299",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-socials.json",
+    "isSource": true,
+    "original": {
+      "value": "#507299",
+      "type": "color"
+    },
+    "name": "gnm-color-social-vkontakte",
+    "attributes": {
+      "category": "color",
+      "type": "social",
+      "item": "vkontakte",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "social",
+      "vkontakte"
+    ]
+  },
+  {
+    "value": "#ff8201",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-socials.json",
+    "isSource": true,
+    "original": {
+      "value": "#ff8201",
+      "type": "color"
+    },
+    "name": "gnm-color-social-odnoklassniki",
+    "attributes": {
+      "category": "color",
+      "type": "social",
+      "item": "odnoklassniki",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "social",
+      "odnoklassniki"
+    ]
+  },
+  {
+    "value": "#dc4a3d",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-socials.json",
+    "isSource": true,
+    "original": {
+      "value": "#dc4a3d",
+      "type": "color"
+    },
+    "name": "gnm-color-social-google",
+    "attributes": {
+      "category": "color",
+      "type": "social",
+      "item": "google",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "social",
+      "google"
+    ]
+  },
+  {
+    "value": "#d93175",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-socials.json",
+    "isSource": true,
+    "original": {
+      "value": "#d93175",
+      "type": "color"
+    },
+    "name": "gnm-color-social-instagram",
+    "attributes": {
+      "category": "color",
+      "type": "social",
+      "item": "instagram",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "social",
+      "instagram"
+    ]
+  },
+  {
+    "value": "#0076b7",
+    "type": "color",
+    "filePath": "tokens/globals/color/color-socials.json",
+    "isSource": true,
+    "original": {
+      "value": "#0076b7",
+      "type": "color"
+    },
+    "name": "gnm-color-social-linkedin",
+    "attributes": {
+      "category": "color",
+      "type": "social",
+      "item": "linkedin",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "color",
+      "social",
+      "linkedin"
+    ]
+  },
+  {
+    "value": "10px",
+    "documentation": {
+      "comment": "Notice: this value should actually be 12px but we have to double check with the designers what is the impact of this change"
+    },
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "10px",
+      "documentation": {
+        "comment": "Notice: this value should actually be 12px but we have to double check with the designers what is the impact of this change"
+      }
+    },
+    "name": "gnm-icon-size-xsm",
+    "attributes": {
+      "category": "icon",
+      "type": "size",
+      "item": "xsm",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "size",
+      "xsm"
+    ]
+  },
+  {
+    "value": "16px",
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "16px"
+    },
+    "name": "gnm-icon-size-sm",
+    "attributes": {
+      "category": "icon",
+      "type": "size",
+      "item": "sm",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "size",
+      "sm"
+    ]
+  },
+  {
+    "value": "22px",
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "22px"
+    },
+    "name": "gnm-icon-size-md",
+    "attributes": {
+      "category": "icon",
+      "type": "size",
+      "item": "md",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "size",
+      "md"
+    ]
+  },
+  {
+    "value": "30px",
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "30px"
+    },
+    "name": "gnm-icon-size-lg",
+    "attributes": {
+      "category": "icon",
+      "type": "size",
+      "item": "lg",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "size",
+      "lg"
+    ]
+  },
+  {
+    "value": "36px",
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "36px"
+    },
+    "name": "gnm-icon-size-xlg",
+    "attributes": {
+      "category": "icon",
+      "type": "size",
+      "item": "xlg",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "size",
+      "xlg"
+    ]
+  },
+  {
+    "value": "46px",
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "46px"
+    },
+    "name": "gnm-icon-size-xxlg",
+    "attributes": {
+      "category": "icon",
+      "type": "size",
+      "item": "xxlg",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "size",
+      "xxlg"
+    ]
+  },
+  {
+    "value": "90px",
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "{avatar.size.md.value}"
+    },
+    "name": "gnm-icon-jumbo-size-md",
+    "attributes": {
+      "category": "icon",
+      "type": "jumbo-size",
+      "item": "md",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "jumbo-size",
+      "md"
+    ]
+  },
+  {
+    "value": "120px",
+    "filePath": "tokens/globals/icon/index.json",
+    "isSource": true,
+    "original": {
+      "value": "{avatar.size.lg.value}"
+    },
+    "name": "gnm-icon-jumbo-size-lg",
+    "attributes": {
+      "category": "icon",
+      "type": "jumbo-size",
+      "item": "lg",
+      "metaData": {}
+    },
+    "path": [
+      "icon",
+      "jumbo-size",
+      "lg"
+    ]
+  },
+  {
+    "value": "#949494",
+    "filePath": "tokens/globals/input/index.json",
+    "isSource": true,
+    "original": {
+      "value": "{color.gray_40.value}"
+    },
+    "name": "gnm-input-placeholder",
+    "attributes": {
+      "category": "input",
+      "type": "placeholder",
+      "metaData": {
+        "category": "color"
+      }
+    },
+    "path": [
+      "input",
+      "placeholder"
+    ]
+  },
+  {
+    "value": "24px",
+    "filePath": "tokens/globals/input/index.json",
+    "isSource": true,
+    "original": {
+      "value": "24px"
+    },
+    "name": "gnm-input-choice-size",
+    "attributes": {
+      "category": "input",
+      "type": "choice",
+      "item": "size",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "choice",
+      "size"
+    ]
+  },
+  {
+    "value": "40px",
+    "filePath": "tokens/globals/input/index.json",
+    "isSource": true,
+    "original": {
+      "value": "40px"
+    },
+    "name": "gnm-input-toggle-width",
+    "attributes": {
+      "category": "input",
+      "type": "toggle",
+      "item": "width",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "toggle",
+      "width"
+    ]
+  },
+  {
+    "value": "24px",
+    "filePath": "tokens/globals/input/index.json",
+    "isSource": true,
+    "original": {
+      "value": "24px"
+    },
+    "name": "gnm-input-toggle-height",
+    "attributes": {
+      "category": "input",
+      "type": "toggle",
+      "item": "height",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "toggle",
+      "height"
+    ]
+  },
+  {
+    "value": "32px",
+    "filePath": "tokens/globals/input/index.json",
+    "isSource": true,
+    "original": {
+      "value": "32px"
+    },
+    "name": "gnm-input-search-height",
+    "attributes": {
+      "category": "input",
+      "type": "search",
+      "item": "height",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "search",
+      "height"
+    ]
+  },
+  {
+    "value": "44px",
+    "filePath": "tokens/platforms/web/input.json",
+    "isSource": true,
+    "original": {
+      "value": "44px"
+    },
+    "name": "gnm-input-toolbar-height",
+    "attributes": {
+      "category": "input",
+      "type": "toolbar",
+      "item": "height",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "toolbar",
+      "height"
+    ]
+  },
+  {
+    "value": "0px",
+    "filePath": "tokens/platforms/web/input.json",
+    "isSource": true,
+    "original": {
+      "value": "0px"
+    },
+    "name": "gnm-input-toolbar-item-gap",
+    "attributes": {
+      "category": "input",
+      "type": "toolbar",
+      "item": "item_gap",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "toolbar",
+      "item_gap"
+    ]
+  },
+  {
+    "value": "32px",
+    "filePath": "tokens/platforms/web/input.json",
+    "isSource": true,
+    "original": {
+      "value": "32px"
+    },
+    "name": "gnm-input-toolbar-send-icon-size",
+    "attributes": {
+      "category": "input",
+      "type": "toolbar",
+      "item": "send_icon_size",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "toolbar",
+      "send_icon_size"
+    ]
+  },
+  {
+    "value": "40px",
+    "filePath": "tokens/platforms/web/input.json",
+    "isSource": true,
+    "original": {
+      "value": "40px"
+    },
+    "name": "gnm-input-switcher-item-size",
+    "attributes": {
+      "category": "input",
+      "type": "switcher",
+      "item": "item_size",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "switcher",
+      "item_size"
+    ]
+  },
+  {
+    "value": "24px",
+    "filePath": "tokens/platforms/web/input.json",
+    "isSource": true,
+    "original": {
+      "value": "24px"
+    },
+    "name": "gnm-input-switcher-icon-size",
+    "attributes": {
+      "category": "input",
+      "type": "switcher",
+      "item": "icon_size",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "switcher",
+      "icon_size"
+    ]
+  },
+  {
+    "value": "36px",
+    "filePath": "tokens/platforms/web/input.json",
+    "isSource": true,
+    "original": {
+      "value": "36px"
+    },
+    "name": "gnm-input-mini-height",
+    "attributes": {
+      "category": "input",
+      "type": "mini",
+      "item": "height",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "mini",
+      "height"
+    ]
+  },
+  {
+    "value": "32px",
+    "filePath": "tokens/platforms/web/input.json",
+    "isSource": true,
+    "original": {
+      "value": "32px"
+    },
+    "name": "gnm-input-mini-send-icon-size",
+    "attributes": {
+      "category": "input",
+      "type": "mini",
+      "item": "send_icon_size",
+      "metaData": {}
+    },
+    "path": [
+      "input",
+      "mini",
+      "send_icon_size"
+    ]
+  },
+  {
+    "value": "65px",
+    "filePath": "tokens/globals/login/index.json",
+    "isSource": true,
+    "original": {
+      "value": "65px"
+    },
+    "name": "gnm-login-size-md",
+    "attributes": {
+      "category": "login",
+      "type": "size",
+      "item": "md",
+      "metaData": {}
+    },
+    "path": [
+      "login",
+      "size",
+      "md"
+    ]
+  },
+  {
+    "value": "90px",
+    "filePath": "tokens/globals/login/index.json",
+    "isSource": true,
+    "original": {
+      "value": "90px"
+    },
+    "name": "gnm-login-size-lg",
+    "attributes": {
+      "category": "login",
+      "type": "size",
+      "item": "lg",
+      "metaData": {}
+    },
+    "path": [
+      "login",
+      "size",
+      "lg"
+    ]
+  },
+  {
+    "value": "200px",
+    "filePath": "tokens/globals/login/index.json",
+    "isSource": true,
+    "original": {
+      "value": "200px"
+    },
+    "name": "gnm-login-size-xlg",
+    "attributes": {
+      "category": "login",
+      "type": "size",
+      "item": "xlg",
+      "metaData": {}
+    },
+    "path": [
+      "login",
+      "size",
+      "xlg"
+    ]
+  },
+  {
+    "value": "48px",
+    "filePath": "tokens/platforms/web/login.json",
+    "isSource": true,
+    "original": {
+      "value": "48px"
+    },
+    "name": "gnm-login-button-height",
+    "attributes": {
+      "category": "login",
+      "type": "button_height",
+      "metaData": {}
+    },
+    "path": [
+      "login",
+      "button_height"
+    ]
+  },
+  {
+    "value": "4px",
+    "filePath": "tokens/globals/spacing/index.json",
+    "isSource": true,
+    "original": {
+      "value": "4px"
+    },
+    "name": "gnm-spacing-xsm",
+    "attributes": {
+      "category": "spacing",
+      "type": "xsm",
+      "metaData": {}
+    },
+    "path": [
+      "spacing",
+      "xsm"
+    ]
+  },
+  {
+    "value": "8px",
+    "filePath": "tokens/globals/spacing/index.json",
+    "isSource": true,
+    "original": {
+      "value": "8px"
+    },
+    "name": "gnm-spacing-sm",
+    "attributes": {
+      "category": "spacing",
+      "type": "sm",
+      "metaData": {}
+    },
+    "path": [
+      "spacing",
+      "sm"
+    ]
+  },
+  {
+    "value": "12px",
+    "filePath": "tokens/globals/spacing/index.json",
+    "isSource": true,
+    "original": {
+      "value": "12px"
+    },
+    "name": "gnm-spacing-md",
+    "attributes": {
+      "category": "spacing",
+      "type": "md",
+      "metaData": {}
+    },
+    "path": [
+      "spacing",
+      "md"
+    ]
+  },
+  {
+    "value": "16px",
+    "filePath": "tokens/globals/spacing/index.json",
+    "isSource": true,
+    "original": {
+      "value": "16px"
+    },
+    "name": "gnm-spacing-lg",
+    "attributes": {
+      "category": "spacing",
+      "type": "lg",
+      "metaData": {}
+    },
+    "path": [
+      "spacing",
+      "lg"
+    ]
+  },
+  {
+    "value": "24px",
+    "filePath": "tokens/globals/spacing/index.json",
+    "isSource": true,
+    "original": {
+      "value": "24px"
+    },
+    "name": "gnm-spacing-xlg",
+    "attributes": {
+      "category": "spacing",
+      "type": "xlg",
+      "metaData": {}
+    },
+    "path": [
+      "spacing",
+      "xlg"
+    ]
+  },
+  {
+    "value": "32px",
+    "filePath": "tokens/globals/spacing/index.json",
+    "isSource": true,
+    "original": {
+      "value": "32px"
+    },
+    "name": "gnm-spacing-xxlg",
+    "attributes": {
+      "category": "spacing",
+      "type": "xxlg",
+      "metaData": {}
+    },
+    "path": [
+      "spacing",
+      "xxlg"
+    ]
+  },
+  {
+    "value": "16px",
+    "filePath": "tokens/globals/spacing/index.json",
+    "isSource": true,
+    "original": {
+      "value": "{spacing.lg.value}"
+    },
+    "name": "gnm-spacing-gutter",
+    "attributes": {
+      "category": "spacing",
+      "type": "gutter",
+      "metaData": {}
+    },
+    "path": [
+      "spacing",
+      "gutter"
+    ]
+  },
+  {
+    "value": "22px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "22px",
+      "category": "typography"
+    },
+    "name": "gnm-font-size-header-1",
+    "attributes": {
+      "category": "font_size",
+      "type": "header_1",
+      "metaData": {}
+    },
+    "path": [
+      "font_size",
+      "header_1"
+    ]
+  },
+  {
+    "value": "20px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "20px",
+      "category": "typography"
+    },
+    "name": "gnm-font-size-header-2",
+    "attributes": {
+      "category": "font_size",
+      "type": "header_2",
+      "metaData": {}
+    },
+    "path": [
+      "font_size",
+      "header_2"
+    ]
+  },
+  {
+    "value": "18px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "18px",
+      "category": "typography"
+    },
+    "name": "gnm-font-size-title",
+    "attributes": {
+      "category": "font_size",
+      "type": "title",
+      "metaData": {}
+    },
+    "path": [
+      "font_size",
+      "title"
+    ]
+  },
+  {
+    "value": "16px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "16px",
+      "category": "typography"
+    },
+    "name": "gnm-font-size-paragraph-1",
+    "attributes": {
+      "category": "font_size",
+      "type": "paragraph_1",
+      "metaData": {}
+    },
+    "path": [
+      "font_size",
+      "paragraph_1"
+    ]
+  },
+  {
+    "value": "15px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "15px",
+      "category": "typography"
+    },
+    "name": "gnm-font-size-paragraph-2",
+    "attributes": {
+      "category": "font_size",
+      "type": "paragraph_2",
+      "metaData": {}
+    },
+    "path": [
+      "font_size",
+      "paragraph_2"
+    ]
+  },
+  {
+    "value": "28px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "28px",
+      "category": "typography"
+    },
+    "name": "gnm-line-height-header-1",
+    "attributes": {
+      "category": "line_height",
+      "type": "header_1",
+      "metaData": {}
+    },
+    "path": [
+      "line_height",
+      "header_1"
+    ]
+  },
+  {
+    "value": "25px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "25px",
+      "category": "typography"
+    },
+    "name": "gnm-line-height-header-2",
+    "attributes": {
+      "category": "line_height",
+      "type": "header_2",
+      "metaData": {}
+    },
+    "path": [
+      "line_height",
+      "header_2"
+    ]
+  },
+  {
+    "value": "24px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "24px",
+      "category": "typography"
+    },
+    "name": "gnm-line-height-title",
+    "attributes": {
+      "category": "line_height",
+      "type": "title",
+      "metaData": {}
+    },
+    "path": [
+      "line_height",
+      "title"
+    ]
+  },
+  {
+    "value": "22px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "22px",
+      "category": "typography"
+    },
+    "name": "gnm-line-height-paragraph-1",
+    "attributes": {
+      "category": "line_height",
+      "type": "paragraph_1",
+      "metaData": {}
+    },
+    "path": [
+      "line_height",
+      "paragraph_1"
+    ]
+  },
+  {
+    "value": "20px",
+    "category": "typography",
+    "filePath": "tokens/globals/typography/index.json",
+    "isSource": true,
+    "original": {
+      "value": "20px",
+      "category": "typography"
+    },
+    "name": "gnm-line-height-paragraph-2",
+    "attributes": {
+      "category": "line_height",
+      "type": "paragraph_2",
+      "metaData": {}
+    },
+    "path": [
+      "line_height",
+      "paragraph_2"
+    ]
+  },
+  {
+    "value": "-apple-system, 'San Francisco', 'Helvetica Neue', 'Segoe WP', 'Segoe UI', Roboto, sans-serif",
+    "category": "typography",
+    "filePath": "tokens/platforms/web/typography.json",
+    "isSource": true,
+    "original": {
+      "value": "-apple-system, 'San Francisco', 'Helvetica Neue', 'Segoe WP', 'Segoe UI', Roboto, sans-serif",
+      "category": "typography"
+    },
+    "name": "gnm-font-family-system",
+    "attributes": {
+      "category": "font_family",
+      "type": "system",
+      "metaData": {}
+    },
+    "path": [
+      "font_family",
+      "system"
+    ]
+  },
+  {
+    "value": "'Uni Neue', sans-serif",
+    "category": "typography",
+    "filePath": "tokens/platforms/web/typography.json",
+    "isSource": true,
+    "original": {
+      "value": "'Uni Neue', sans-serif",
+      "category": "typography"
+    },
+    "name": "gnm-font-family-custom",
+    "attributes": {
+      "category": "font_family",
+      "type": "custom",
+      "metaData": {}
+    },
+    "path": [
+      "font_family",
+      "custom"
+    ]
+  }
+]

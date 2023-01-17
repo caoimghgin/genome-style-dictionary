@@ -1,0 +1,21 @@
+{
+  "name": "genome-style-dictionary",
+  "version": "0.0.1",
+  "description": "Advanced use of Style Dictionary with generated tokens.json files from Figma plugins",
+  "main": "build.js",
+  "scripts": {
+    "build": "npm run clean && node ./build.js",
+    "clean": "rm -rf ${npm_package_ENV_BUILD_DIR}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "ENV": {
+    "SOURCE_DIR": "tokens",
+    "BUILD_DIR": "build",
+    "PREFIX": "GNM"
+  },  
+  "author": "Kevin Muldoon",
+  "license": "MIT",
+  "dependencies": {
+    "style-dictionary": "^3.7.2"
+  }
+}

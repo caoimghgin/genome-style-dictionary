@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<dict>
+    <key>gnmAliasColorBrandPrimary</key><string>#EA4335</string>
+    <key>gnmAliasColorBrandSecondary</key><string>#34A853</string>
+    <key>gnmColorPrimary</key><string>#EA4335</string>
+    <key>gnmColorSecondary</key><string>#34A853</string>
+    <key>gnmColorGreen</key><string>#4A8C70</string><!-- look how this comment will appear in the generated files -->
+    <key>gnmColorBlue</key><string>#14213D</string>
+    <key>gnmColorYellow</key><string>#FCA311</string>
+    <key>gnmColorRed</key><string>#BF0603</string>
+    <key>gnmColorFeatureChat</key><string>#4A8C70</string>
+    <key>gnmColorFeatureBlog</key><string>#14213D</string>
+    <key>gnmColorFeatureShop</key><string>#FCA311</string>
+    <key>gnmColorFeatureSettings</key><string>#BF0603</string>
+    <key>gnmColorBlack</key><string>#000</string>
+    <key>gnmColorGray60</key><string>#6a6a6a</string>
+    <key>gnmColorGray40</key><string>#949494</string>
+    <key>gnmColorGray24</key><string>#c4c4c4</string>
+    <key>gnmColorGray12</key><string>#e0e0e0</string>
+    <key>gnmColorGray3</key><string>#f6f6f6</string>
+    <key>gnmColorActionPrimary</key><string>#EA4335</string>
+    <key>gnmColorActionDestructive</key><string>#BF0603</string>
+    <key>gnmColorBorder</key><string>#e0e0e0</string>
+    <key>gnmColorUserAuthenticated</key><string>#4A8C70</string>
+    <key>gnmColorUserAnonymous</key><string>#949494</string>
+    <key>gnmColorSocialFacebook</key><string>#4867aa</string>
+    <key>gnmColorSocialTwitter</key><string>#1ab0ff</string>
+    <key>gnmColorSocialVkontakte</key><string>#507299</string>
+    <key>gnmColorSocialOdnoklassniki</key><string>#ff8201</string>
+    <key>gnmColorSocialGoogle</key><string>#dc4a3d</string>
+    <key>gnmColorSocialInstagram</key><string>#d93175</string>
+    <key>gnmColorSocialLinkedin</key><string>#0076b7</string>
+    
+</dict>
+</plist>

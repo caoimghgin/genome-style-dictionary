@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <color name="gnmAliasColorBrandPrimary">#EA4335</color>
+    <color name="gnmAliasColorBrandSecondary">#34A853</color>
+    <color name="gnmColorPrimary">#EA4335</color>
+    <color name="gnmColorSecondary">#34A853</color>
+    <color name="gnmColorGreen">#4A8C70</color><!-- look how this comment will appear in the generated files -->
+    <color name="gnmColorBlue">#14213D</color>
+    <color name="gnmColorYellow">#FCA311</color>
+    <color name="gnmColorRed">#BF0603</color>
+    <color name="gnmColorFeatureChat">#4A8C70</color>
+    <color name="gnmColorFeatureBlog">#14213D</color>
+    <color name="gnmColorFeatureShop">#FCA311</color>
+    <color name="gnmColorFeatureSettings">#BF0603</color>
+    <color name="gnmColorBlack">#000</color>
+    <color name="gnmColorGray60">#6a6a6a</color>
+    <color name="gnmColorGray40">#949494</color>
+    <color name="gnmColorGray24">#c4c4c4</color>
+    <color name="gnmColorGray12">#e0e0e0</color>
+    <color name="gnmColorGray3">#f6f6f6</color>
+    <color name="gnmColorActionPrimary">#EA4335</color>
+    <color name="gnmColorActionDestructive">#BF0603</color>
+    <color name="gnmColorBorder">#e0e0e0</color>
+    <color name="gnmColorUserAuthenticated">#4A8C70</color>
+    <color name="gnmColorUserAnonymous">#949494</color>
+    <color name="gnmColorSocialFacebook">#4867aa</color>
+    <color name="gnmColorSocialTwitter">#1ab0ff</color>
+    <color name="gnmColorSocialVkontakte">#507299</color>
+    <color name="gnmColorSocialOdnoklassniki">#ff8201</color>
+    <color name="gnmColorSocialGoogle">#dc4a3d</color>
+    <color name="gnmColorSocialInstagram">#d93175</color>
+    <color name="gnmColorSocialLinkedin">#0076b7</color>
+    
+</resources>
