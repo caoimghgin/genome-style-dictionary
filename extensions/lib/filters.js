@@ -18,4 +18,11 @@ included (true) or excluded (false). This is only available if you are defining
 your configuration  in Javascript.
 */
 
-// TBD
+const StyleDictionary = require('style-dictionary');
+
+StyleDictionary.registerFilter({
+    name:"gnm/isColor",
+    matcher: (token) => {
+        return true
+    }
+})

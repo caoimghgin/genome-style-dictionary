@@ -30,9 +30,10 @@ design tokens are structured differently you will need to write custom transform
 make sure the proper CTIs are on the attributes of your design tokens.
 */
 StyleDictionary.registerTransform({
-    name: `${ENV.PREFIX}/attribute/meta`,
+    name: `gnm/attribute/meta`,
     type: 'attribute',
     transformer: function (token) {
+        console.log(token)
         var result = { metaData:{ category: undefined, type: undefined, other: undefined } };
 
         if (isColor(token.value)) {
@@ -48,7 +49,7 @@ StyleDictionary.registerTransform({
 Log to console the properties of tokens
 */
 StyleDictionary.registerTransform({
-    name: `${ENV.PREFIX}/console/log`,
+    name: `gnm/console/log`,
     type: 'attribute',
     transformer: function (token) {
         console.log(token)
@@ -56,7 +57,7 @@ StyleDictionary.registerTransform({
 })
 
 StyleDictionary.registerTransform({
-    name: `${ENV.PREFIX}/size/pxToPt`,
+    name: `gnm/size/pxToPt`,
     type: 'value',
     matcher: function(prop) {
         return prop.value.match(/^[\d.]+px$/);
@@ -67,7 +68,7 @@ StyleDictionary.registerTransform({
 });
 
 StyleDictionary.registerTransform({
-    name: `${ENV.PREFIX}/size/pxToDp`,
+    name: `gnm/size/pxToDp`,
     type: 'value',
     matcher: function(prop) {
         return prop.value.match(/^[\d.]+px$/);

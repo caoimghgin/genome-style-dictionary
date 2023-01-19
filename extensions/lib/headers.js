@@ -26,7 +26,7 @@ const StyleDictionary = require('style-dictionary');
 const { ENV } = require('../../package.json')
 
 StyleDictionary.registerFileHeader({
-  name: `${ENV.PREFIX}/header/hello`,
+  name: `gnm/header/hello`,
   fileHeader: (defaultMessage) => {
     // defaultMessage are the 2 lines above that appear in the default file header
     // you can use this to add a message before or after the default message 👇
