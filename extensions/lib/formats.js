@@ -18,23 +18,23 @@ const _ = require('lodash');
 const fs = require('fs');
 
 StyleDictionary.registerFormat({
-    name: 'gnm/json/flat',
+    name: 'csms/json/flat',
     formatter: function (dictionary) {
         return JSON.stringify(dictionary.allProperties, null, 2);
     }
 });
 
 StyleDictionary.registerFormat({
-    name: 'gnm/ios/plist',
+    name: 'csms/ios/plist',
     formatter: _.template(fs.readFileSync(__dirname + '/templates/ios-plist.template')),
 });
 
 StyleDictionary.registerFormat({
-    name: 'gnm/android/xml',
+    name: 'csms/android/xml',
     formatter: _.template(fs.readFileSync(__dirname + '/templates/android-xml.template')),
 });
 
 StyleDictionary.registerFormat({
-    name: 'gnm/android/colors',
+    name: 'csms/android/colors',
     formatter: _.template(fs.readFileSync( __dirname + '/templates/android-xml.template')),
   });

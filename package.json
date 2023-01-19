@@ -11,7 +11,9 @@
   "ENV": {
     "SOURCE_DIR": "tokens",
     "BUILD_DIR": "build",
-    "PREFIX": "GNM"
+    "PREFIX": "GNM",
+    "//PLATFORMS": ["css", "scss", "csms-scss", "csms-ios-plist", "js"],
+    "PLATFORMS": ["scss", "js", "es6", "pList", "xml"]
   },  
   "author": "Kevin Muldoon",
   "license": "MIT",
