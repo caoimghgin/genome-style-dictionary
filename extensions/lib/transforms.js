@@ -22,28 +22,16 @@ see where this is applicable.
 
 const StyleDictionary = require('style-dictionary');
 const { ENV } = require('../../package.json')
-const { isColor, CATEGORY } = require('../../utils')
+const { isColor } = require('../../utils')
+const { COLOR_TYPE, CATEGORY, PALETTE } = require('../../utils/lib/constants')
+
+const { parseColorTaxonomy } = require('./helpers')
 
 /* 
 All pre-defined transforms included use the CTI structure for matching tokens. If your 
 design tokens are structured differently you will need to write custom transforms or 
 make sure the proper CTIs are on the attributes of your design tokens.
 */
-StyleDictionary.registerTransform({
-    name: `gnm/attribute/meta`,
-    type: 'attribute',
-    transformer: function (token) {
-        console.log(token)
-        var result = { metaData:{ category: undefined, type: undefined, other: undefined } };
-
-        if (isColor(token.value)) {
-            result.metaData.category = CATEGORY.COLOR
-        }
-
-        const attributes = token.attributes || {};
-        return Object.assign(result, attributes);
-      }
-})
 
 /*
 Log to console the properties of tokens
@@ -56,13 +44,71 @@ StyleDictionary.registerTransform({
     }
 })
 
+/*
+Add MetaData to attributes
+*/
+StyleDictionary.registerTransform({
+    name: `gnm/attribute/sctisc`,
+    type: 'attribute',
+    transformer: function (token) {
+        var result = {
+                taxonomy: {
+                    system: undefined,
+                    category: undefined,
+                    type: undefined,
+                    item: undefined,
+                    state: undefined,
+                    context: undefined,
+            }, 
+            name: undefined,
+            path: undefined,
+
+        };
+
+        result.name = token.path.slice(-1)[0] 
+
+        if (isColor(token.value)) { parseColorTaxonomy(result) }
+
+        // if (isColor(token.value)) {
+        //     if (PALETTE.includes(name)) {
+        //         category = COLOR_TYPE.PALETTE
+                // const semanticWeightSplit = name.match(/[^\d]+|\d+/g);
+                // if (semanticWeightSplit.length === 2) {
+                //     type = semanticWeightSplit[0]
+                //     state = semanticWeightSplit[1]
+                // }
+        //     } else {
+        //         category = CATEGORY.COLOR
+        //     }
+        // }
+
+        // const foo = Object.keys(result.taxonomy).map(function(key){
+        //     return result.taxonomy[key];
+        // });
+
+        // const path = foo.filter(function(item){
+        //     return typeof item ==='string';  
+        // });
+
+        // result.taxonomy.system = system
+        // result.taxonomy.category = category
+        // result.taxonomy.type = type
+        // result.taxonomy.state = state
+        // result.name = name
+        // result.path = path
+
+        const attributes = token.attributes || {};
+        return Object.assign(result, attributes);
+    }
+})
+
 StyleDictionary.registerTransform({
     name: `gnm/size/pxToPt`,
     type: 'value',
-    matcher: function(prop) {
+    matcher: function (prop) {
         return prop.value.match(/^[\d.]+px$/);
     },
-    transformer: function(prop) {
+    transformer: function (prop) {
         return prop.value.replace(/px$/, 'pt');
     }
 });
@@ -70,10 +116,10 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerTransform({
     name: `gnm/size/pxToDp`,
     type: 'value',
-    matcher: function(prop) {
+    matcher: function (prop) {
         return prop.value.match(/^[\d.]+px$/);
     },
-    transformer: function(prop) {
+    transformer: function (prop) {
         return prop.value.replace(/px$/, 'dp');
     }
 });
