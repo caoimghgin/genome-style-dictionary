@@ -23,7 +23,7 @@ const TransformGroups = {
 
 StyleDictionary.registerTransformGroup({
     name: `csms/styleguide`,
-    transforms: ["attribute/cti", `gnm/attribute/meta`, "name/cti/kebab", "size/px", "color/css"] // , `gnm/console/log`
+    transforms: ["attribute/cti", `gnm/attribute/sctisc`, "name/cti/kebab", "size/px", "color/css"] // , `gnm/console/log`
 });
 
 StyleDictionary.registerTransformGroup({
@@ -39,7 +39,7 @@ StyleDictionary.registerTransformGroup({
 // To see the pre-defined "scss" transformation use: console.log(StyleDictionaryPackage.transformGroup['scss']);
 StyleDictionary.registerTransformGroup({
     name: `csms/tokens-scss`,
-    transforms: [ "name/cti/kebab", `gnm/attribute/meta`, "time/seconds", "size/px", "color/css", `gnm/console/log` ]
+    transforms: ["attribute/cti", `gnm/attribute/sctisc`, "name/cti/kebab", "time/seconds", "size/px", "color/css", `gnm/console/log` ]
 });
 
 // To see the pre-defined "ios" transformation use: console.log(StyleDictionaryPackage.transformGroup['ios']);

@@ -1,4 +1,4 @@
-module.exports = {
+var _styleDictionary = {
   "color": {
     "palette": {
       "primary": {
@@ -13,7 +13,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-015 (A1)\n\nhex: : #F4F9FD\nL*: 97.66 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -47,7 +47,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-025 (A2)\n\nhex: : #E9F2FA\nL*: 95.05 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -81,7 +81,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-050 (A3)\n\nhex: : #D5E4F2\nL*: 89.88 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -115,7 +115,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-075 (A5)\n\nhex: : #ABCAE4\nL*: 79.9 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -149,7 +149,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-085 (A7)\n\nhex: : #81B0D9\nL*: 69.98 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -183,7 +183,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-100 (A9)\n\nhex: : #5696CA\nL*: 59.94 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -217,7 +217,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-200 (A10)\n\nhex: : #4089C2\nL*: 54.94 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -251,7 +251,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-300 (A11)\n\nhex: : #1E7CBB\nL*: 49.83 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -285,7 +285,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-400 (A12)\n\nhex: : #0274B6\nL*: 46.82 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -319,7 +319,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-500 (A13)\n\nhex: : #00639D\nL*: 40.17 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -353,7 +353,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-600 (A15)\n\nhex: : #044A76\nL*: 29.99 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -387,7 +387,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-700 (A17)\n\nhex: : #003355\nL*: 20.14 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -421,7 +421,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-800 (A18)\n\nhex: : #022843\nL*: 15.15 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -455,7 +455,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-primary-900 (A19)\n\nhex: : #001D33\nL*: 9.94 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -491,7 +491,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-015 (B1)\n\nhex: : #F9F7FE\nL*: 97.56 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -525,7 +525,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-025 (B2)\n\nhex: : #F3EEFC\nL*: 94.84 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -559,7 +559,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-050 (B3)\n\nhex: : #E7DFF6\nL*: 90.05 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -593,7 +593,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-075 (B5)\n\nhex: : #D0BFEF\nL*: 80.13 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -627,7 +627,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-085 (B7)\n\nhex: : #B99FE5\nL*: 70.01 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -661,7 +661,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-100 (B9)\n\nhex: : #A37FDB\nL*: 59.96 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -695,7 +695,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-200 (B10)\n\nhex: : #9770D3\nL*: 54.94 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -729,7 +729,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-300 (B11)\n\nhex: : #8D5FCD\nL*: 49.8 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -763,7 +763,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-400 (B12)\n\nhex: : #8856CB\nL*: 47.24 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -797,7 +797,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-500 (B13)\n\nhex: : #7347AD\nL*: 39.86 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -831,7 +831,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-600 (B15)\n\nhex: : #563583\nL*: 29.82 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -865,7 +865,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-700 (B17)\n\nhex: : #3D235F\nL*: 20.13 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -899,7 +899,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-800 (B18)\n\nhex: : #2F1B4A\nL*: 14.86 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -933,7 +933,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-secondary-900 (B19)\n\nhex: : #24133A\nL*: 10.16 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -969,7 +969,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-015 (C1)\n\nhex: : #F9F8F6\nL*: 97.6 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1003,7 +1003,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-025 (C2)\n\nhex: : #F2F0EC\nL*: 94.85 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1037,7 +1037,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-050 (C3)\n\nhex: : #E6E2DB\nL*: 90.01 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1071,7 +1071,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-075 (C5)\n\nhex: : #CDC5B9\nL*: 79.85 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1105,7 +1105,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-085 (C7)\n\nhex: : #B6AA97\nL*: 70.13 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1139,7 +1139,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-100 (C9)\n\nhex: : #9F8F76\nL*: 60.18 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1173,7 +1173,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-200 (C10)\n\nhex: : #928166\nL*: 54.84 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1207,7 +1207,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-300 (C11)\n\nhex: : #877456\nL*: 49.88 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1241,7 +1241,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-400 (C12)\n\nhex: : #816D4D\nL*: 47.16 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -1275,7 +1275,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-500 (C13)\n\nhex: : #6E5C40\nL*: 40.15 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -1309,7 +1309,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-600 (C15)\n\nhex: : #534530\nL*: 30.18 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1343,7 +1343,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-700 (C17)\n\nhex: : #392F1F\nL*: 20.05 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1377,7 +1377,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-800 (C18)\n\nhex: : #2D2418\nL*: 14.88 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1411,7 +1411,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-tertiary-900 (C19)\n\nhex: : #211B10\nL*: 10.14 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1447,7 +1447,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-015 (D1)\n\nhex: : #F4F9F4\nL*: 97.44 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1481,7 +1481,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-025 (D2)\n\nhex: : #EAF4E8\nL*: 95.17 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1515,7 +1515,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-050 (D3)\n\nhex: : #D5E7D3\nL*: 89.86 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1549,7 +1549,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-075 (D5)\n\nhex: : #ADD0A9\nL*: 80.1 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1583,7 +1583,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-085 (D7)\n\nhex: : #82B97C\nL*: 70.1 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1617,7 +1617,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-100 (D9)\n\nhex: : #58A151\nL*: 60.03 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1651,7 +1651,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-200 (D10)\n\nhex: : #43953C\nL*: 55.09 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1685,7 +1685,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-300 (D11)\n\nhex: : #22891C\nL*: 49.87 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1719,7 +1719,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-400 (D12)\n\nhex: : #0A8200\nL*: 47.01 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -1753,7 +1753,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-500 (D13)\n\nhex: : #096E00\nL*: 39.93 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -1787,7 +1787,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-600 (D15)\n\nhex: : #065301\nL*: 29.98 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1821,7 +1821,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-700 (D17)\n\nhex: : #003A00\nL*: 20.15 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1855,7 +1855,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-800 (D18)\n\nhex: : #022D02\nL*: 14.92 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1889,7 +1889,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-positive-900 (D19)\n\nhex: : #012200\nL*: 10.19 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -1925,7 +1925,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-015 (E1)\n\nhex: : #FFF6F4\nL*: 97.51 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1959,7 +1959,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-025 (E2)\n\nhex: : #FFEDEA\nL*: 95.06 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -1993,7 +1993,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-050 (E3)\n\nhex: : #FEDAD4\nL*: 89.85 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2027,7 +2027,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-075 (E5)\n\nhex: : #FDB4AA\nL*: 79.86 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2061,7 +2061,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-085 (E7)\n\nhex: : #FA8D7D\nL*: 70.08 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2095,7 +2095,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-100 (E9)\n\nhex: : #F16352\nL*: 60.1 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2129,7 +2129,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-200 (E10)\n\nhex: : #EA4C3C\nL*: 55.07 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2163,7 +2163,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-300 (E11)\n\nhex: : #E4281E\nL*: 49.63 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2197,7 +2197,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-400 (E12)\n\nhex: : #E10000\nL*: 46.99 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -2231,7 +2231,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-500 (E13)\n\nhex: : #C10000\nL*: 40.15 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -2265,7 +2265,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-600 (E15)\n\nhex: : #930201\nL*: 30.04 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2299,7 +2299,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-700 (E17)\n\nhex: : #690000\nL*: 20.06 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2333,7 +2333,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-800 (E18)\n\nhex: : #540202\nL*: 15.13 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2367,7 +2367,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-negative-900 (E19)\n\nhex: : #410000\nL*: 9.99 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2403,7 +2403,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-015 (F1)\n\nhex: : #FEF8E7\nL*: 97.62 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2437,7 +2437,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-025 (F2)\n\nhex: : #FFF0C6\nL*: 95.02 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2471,7 +2471,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-050 (F3)\n\nhex: : #FEE091\nL*: 90.06 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2505,7 +2505,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-075 (F4)\n\nhex: : #FFCF3D\nL*: 85.11 (85)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2539,7 +2539,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-085 (F7)\n\nhex: : #CEA730\nL*: 70.16 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2573,7 +2573,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-100 (F9)\n\nhex: : #AF8D27\nL*: 60.17 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2607,7 +2607,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-200 (F10)\n\nhex: : #9F8023\nL*: 55 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2641,7 +2641,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-300 (F11)\n\nhex: : #8F731C\nL*: 49.72 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2675,7 +2675,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-400 (F12)\n\nhex: : #81681A\nL*: 45.14 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -2709,7 +2709,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-500 (F13)\n\nhex: : #735B17\nL*: 39.9 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -2743,7 +2743,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-600 (F15)\n\nhex: : #56450F\nL*: 30.08 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2777,7 +2777,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-700 (F17)\n\nhex: : #3D2F02\nL*: 20.16 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2811,7 +2811,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-800 (F18)\n\nhex: : #2F2407\nL*: 14.85 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2845,7 +2845,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-highlight-900 (F19)\n\nhex: : #241A00\nL*: 9.91 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -2881,7 +2881,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-015 (G1)\n\nhex: : #FFF6F0\nL*: 97.42 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2915,7 +2915,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-025 (G2)\n\nhex: : #FFEDE1\nL*: 94.85 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2949,7 +2949,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-050 (G3)\n\nhex: : #FEDCC8\nL*: 90.06 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -2983,7 +2983,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-075 (G5)\n\nhex: : #FFB68A\nL*: 79.93 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3017,7 +3017,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-085 (G7)\n\nhex: : #F8914B\nL*: 69.98 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3051,7 +3051,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-100 (G8)\n\nhex: : #F57C13\nL*: 64.87 (65)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3085,7 +3085,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-200 (G10)\n\nhex: : #CE670E\nL*: 54.93 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3119,7 +3119,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-300 (G11)\n\nhex: : #B95D0E\nL*: 49.71 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3153,7 +3153,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-400 (G12)\n\nhex: : #A95307\nL*: 45.14 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -3187,7 +3187,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-500 (G13)\n\nhex: : #954A09\nL*: 40.1 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -3221,7 +3221,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-600 (G15)\n\nhex: : #723605\nL*: 29.98 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3255,7 +3255,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-700 (G17)\n\nhex: : #502404\nL*: 19.95 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3289,7 +3289,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-800 (G18)\n\nhex: : #401C00\nL*: 15.07 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3323,7 +3323,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-attention-900 (G19)\n\nhex: : #301307\nL*: 9.87 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3359,7 +3359,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-015 (H1)\n\nhex: : #F3F8FF\nL*: 97.39 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3393,7 +3393,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-025 (H2)\n\nhex: : #E8F2FF\nL*: 95.11 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3427,7 +3427,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-050 (H3)\n\nhex: : #D3E4FE\nL*: 90.09 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3461,7 +3461,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-075 (H5)\n\nhex: : #A6C8FF\nL*: 79.97 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3495,7 +3495,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-085 (H7)\n\nhex: : #7BABFF\nL*: 69.86 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3529,7 +3529,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-100 (H9)\n\nhex: : #518DFF\nL*: 59.9 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3563,7 +3563,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-200 (H10)\n\nhex: : #3A7EFD\nL*: 54.98 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3597,7 +3597,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-300 (H11)\n\nhex: : #206CFF\nL*: 49.8 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3631,7 +3631,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-400 (H12)\n\nhex: : #0F62FE\nL*: 46.96 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -3665,7 +3665,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-500 (H13)\n\nhex: : #0353DA\nL*: 40.02 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -3699,7 +3699,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-600 (H15)\n\nhex: : #093EA6\nL*: 30.05 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3733,7 +3733,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-700 (H17)\n\nhex: : #012979\nL*: 19.93 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3767,7 +3767,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-800 (H18)\n\nhex: : #05205F\nL*: 14.91 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3801,7 +3801,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-info-900 (H19)\n\nhex: : #01174B\nL*: 10.01 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -3837,7 +3837,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-015 (I1)\n\nhex: : #F3F9FF\nL*: 97.64 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3871,7 +3871,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-025 (I2)\n\nhex: : #E5F2FF\nL*: 94.9 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3905,7 +3905,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-050 (I3)\n\nhex: : #CFE4FF\nL*: 89.85 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3939,7 +3939,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-075 (I5)\n\nhex: : #A0C9FF\nL*: 79.88 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -3973,7 +3973,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-085 (I7)\n\nhex: : #70ADFF\nL*: 69.86 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4007,7 +4007,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-100 (I9)\n\nhex: : #3E90FD\nL*: 59.94 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4041,7 +4041,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-200 (I10)\n\nhex: : #007AFF\nL*: 53.1 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4075,7 +4075,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-300 (I11)\n\nhex: : #0472EE\nL*: 49.77 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4109,7 +4109,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-400 (I12)\n\nhex: : #0A66D8\nL*: 44.97 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -4143,7 +4143,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-500 (I13)\n\nhex: : #005BC0\nL*: 40.06 (40)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -4177,7 +4177,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-600 (I15)\n\nhex: : #034493\nL*: 30.06 (30)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4211,7 +4211,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-700 (I17)\n\nhex: : #032E68\nL*: 19.93 (20)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4245,7 +4245,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-800 (I18)\n\nhex: : #002456\nL*: 15.13 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4279,7 +4279,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-system-900 (I19)\n\nhex: : #011A41\nL*: 10.01 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4315,7 +4315,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-015 (J1)\n\nhex: : #F8F8F8\nL*: 97.58 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4349,7 +4349,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-025 (J2)\n\nhex: : #F1F1F1\nL*: 95.15 (95)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4383,7 +4383,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-050 (J3)\n\nhex: : #E2E2E2\nL*: 89.88 (90)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4417,7 +4417,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-075 (J5)\n\nhex: : #C6C6C6\nL*: 79.88 (80)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4451,7 +4451,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-085 (J7)\n\nhex: : #ABABAB\nL*: 69.98 (70)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4485,7 +4485,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-100 (J9)\n\nhex: : #919191\nL*: 60.17 (60)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4519,7 +4519,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-200 (J10)\n\nhex: : #848484\nL*: 55.15 (55)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4553,7 +4553,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-300 (J11)\n\nhex: : #767676\nL*: 49.64 (50)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
@@ -4587,7 +4587,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-400 (J12)\n\nhex: : #6F6F6F\nL*: 46.84 (45)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: true\n",
@@ -4621,7 +4621,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-500 (J14)\n\nhex: : #525252\nL*: 34.88 (35)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4655,7 +4655,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-600 (J16)\n\nhex: : #3B3B3B\nL*: 24.87 (25)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4689,7 +4689,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-700 (J18)\n\nhex: : #262626\nL*: 15.16 (15)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4723,7 +4723,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-800 (J19)\n\nhex: : #1B1B1B\nL*: 9.77 (10)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4757,7 +4757,7 @@ module.exports = {
               "exportKey": "color"
             }
           },
-          "filePath": "tokens/AAPL/color.json",
+          "filePath": "tokens/APPL/color.json",
           "isSource": true,
           "original": {
             "description": "$palette-neutral-900 (J20)\n\nhex: : #111111\nL*: 5.06 (5)\n\n#FFFFFF-4.5:1: true\n#FFFFFF-3.0:1: true\n#000000-4.5:1: false\n#000000-3.0:1: false\n",
@@ -4792,7 +4792,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "",
@@ -4827,7 +4827,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "",
@@ -4866,7 +4866,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (5% opacity)",
@@ -4901,7 +4901,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (10% opacity)",
@@ -4936,7 +4936,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (20% opacity)",
@@ -4971,7 +4971,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (30% opacity)",
@@ -5006,7 +5006,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (40% opacity)",
@@ -5041,7 +5041,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (50% opacity)",
@@ -5076,7 +5076,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (60% opacity)",
@@ -5111,7 +5111,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (70% opacity)",
@@ -5146,7 +5146,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (80% opacity)",
@@ -5181,7 +5181,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (90% opacity)",
@@ -5216,7 +5216,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "black (95% opacity)",
@@ -5253,7 +5253,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (5% opacity)",
@@ -5288,7 +5288,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (10% opacity)",
@@ -5323,7 +5323,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (20% opacity)",
@@ -5358,7 +5358,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (30% opacity)",
@@ -5393,7 +5393,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (40% opacity)",
@@ -5428,7 +5428,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (50% opacity)",
@@ -5463,7 +5463,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (60% opacity)",
@@ -5498,7 +5498,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (70% opacity)",
@@ -5533,7 +5533,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (80% opacity)",
@@ -5568,7 +5568,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (90% opacity)",
@@ -5603,7 +5603,7 @@ module.exports = {
                 "exportKey": "color"
               }
             },
-            "filePath": "tokens/AAPL/color.json",
+            "filePath": "tokens/APPL/color.json",
             "isSource": true,
             "original": {
               "description": "white (95% opacity)",

@@ -1,6 +1,6 @@
 const tinycolor = require('tinycolor2');
 const fs = require('fs');
-const { CATEGORY, COLOR_TYPE } = require('./lib/constants')
+const { CATEGORY, COLOR_TYPE, PALETTE } = require('./lib/constants')
 
 module.exports = {
 
@@ -8,7 +8,8 @@ module.exports = {
 
     CATEGORY,
     COLOR_TYPE,
-
+    PALETTE,
+    
     // Functions
 
     getDirectories: (path) => {
