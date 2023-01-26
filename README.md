@@ -1,7 +1,7 @@
 # genome-style-dictionary
 This project is a demonstration of a setup of [Style Dictionary](https://github.com/amzn/style-dictionary) for the transformation of Figma plugin generated design tokens to platform specific code.
 
-Genome Style Dictionary builds upon the excellent work of [Cristiano Rastelli](https://medium.com/@didoo) who wrote [a Medium article](https://medium.com/@didoo/how-to-manage-your-design-tokens-with-style-dictionary-98c795b938aa) in 2018 shares his experiences in setting up Style Dictionary for the [Cosmos Design System](http://medium.com/badoo-developers/from-zero-to-cosmos-part-1-2d080fe35bf2) in Badoo.
+Genome Style Dictionary builds upon the excellent work of [Cristiano Rastelli](https://medium.com/@didoo) whose 2018 [Medium article](https://medium.com/@didoo/how-to-manage-your-design-tokens-with-style-dictionary-98c795b938aa) shares his experiences in setting up Style Dictionary for the [Cosmos Design System](http://medium.com/badoo-developers/from-zero-to-cosmos-part-1-2d080fe35bf2) in Badoo.
 
 
 
