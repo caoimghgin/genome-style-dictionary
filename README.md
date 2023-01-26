@@ -6,7 +6,7 @@ Genome Style Dictionary builds upon the excellent work of [Cristiano Rastelli](h
 Code in genome-style-dictionary is leveraged from Cristianos GitHub repo [didoo/style-dictionary-demo](https://github.com/didoo/style-dictionary-demo) but is significantly refactored to ensure classes and functions are manageable and easy to read. Original code is prefixed with csms/ to give credit to the Cosmos Design System which it was created for. New code is prefixed with gnm/ to denote it is genome specific.
 
 ## Demo
-The Genome Style Dictionary demo is based on a fictionalized future world (dystopian?) where a new mega-corporation named FANG buys Facebook, Amazon, Apple, Netflix. and Google. 
+The Genome Style Dictionary demo is based on a fictionalized future world (dystopian?) where a mega-corporation named FANG buys Facebook, Amazon, Apple, Netflix. and Google. 
 
 The CEO of FANG Corp. has chosen the Genome Design System to align all brands and decreed all companies must adopt, or else! The system needs to accommodate all brands and platforms with minimal impact to each organizations look/feel and must support dark-mode as well.
 
