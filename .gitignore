@@ -131,3 +131,6 @@ dist
 
 # Style Dictionary build directory
 build/
+
+# Desktop Services Store, holds custom attributes/metadata of its containing folder
+.DS_Store
