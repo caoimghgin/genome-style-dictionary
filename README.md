@@ -8,7 +8,7 @@ Much of the code in genome-style-dictionary is leveraged from Cristianos [didoo/
 ## Demo
 The Genome Style Dictionary demo is based on a fictionalized future world (dystopian?) where a new mega-corporation named FANG buys Facebook, Amazon, Apple, Netflix. and Google. 
 
-The CEO of FANG corporation has chosen a design system to align all brands and decreed all companies must adopt, or else! The system needs to accommodate all brands and platforms with minimal impact to each organizations unique look/feel and must support dark-mode as well.
+The CEO of FANG Corp. has chosen a design system to align all brands and decreed all companies must adopt, or else! The system needs to accommodate all brands and platforms with minimal impact to each organizations unique look/feel and must support dark-mode as well.
 
 While neither FANG Corp. or Genome Design System exists, this extreme scenario highlights all the edge cases Design Systems Professionals will encounter when building white-label design systems. It also shows the need for excellent naming convention standards to customize Style Dictionary so we can take advantage of automated token.json output from Figma (rather than hand typing to match the desired CTI structure of Style Dictionary).
 
