@@ -25,7 +25,7 @@ const { ENV } = require('../../package.json')
 const { isColor } = require('../../utils')
 const { COLOR_TYPE, CATEGORY, PALETTE } = require('../../utils/lib/constants')
 
-const { parseColorTaxonomy } = require('./helpers')
+const { parseColorTaxonomy, nameFromPath } = require('./helpers')
 
 /* 
 All pre-defined transforms included use the CTI structure for matching tokens. If your 
@@ -51,51 +51,24 @@ StyleDictionary.registerTransform({
     name: `gnm/attribute/sctisc`,
     type: 'attribute',
     transformer: function (token) {
+
         var result = {
                 taxonomy: {
                     system: undefined,
                     category: undefined,
                     type: undefined,
                     item: undefined,
+                    subItem: undefined,
                     state: undefined,
                     context: undefined,
             }, 
             name: undefined,
             path: undefined,
-
         };
 
-        result.name = token.path.slice(-1)[0] 
+        result.name = nameFromPath(token.path)
 
         if (isColor(token.value)) { parseColorTaxonomy(result) }
-
-        // if (isColor(token.value)) {
-        //     if (PALETTE.includes(name)) {
-        //         category = COLOR_TYPE.PALETTE
-                // const semanticWeightSplit = name.match(/[^\d]+|\d+/g);
-                // if (semanticWeightSplit.length === 2) {
-                //     type = semanticWeightSplit[0]
-                //     state = semanticWeightSplit[1]
-                // }
-        //     } else {
-        //         category = CATEGORY.COLOR
-        //     }
-        // }
-
-        // const foo = Object.keys(result.taxonomy).map(function(key){
-        //     return result.taxonomy[key];
-        // });
-
-        // const path = foo.filter(function(item){
-        //     return typeof item ==='string';  
-        // });
-
-        // result.taxonomy.system = system
-        // result.taxonomy.category = category
-        // result.taxonomy.type = type
-        // result.taxonomy.state = state
-        // result.name = name
-        // result.path = path
 
         const attributes = token.attributes || {};
         return Object.assign(result, attributes);

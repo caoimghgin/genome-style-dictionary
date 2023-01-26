@@ -23,6 +23,10 @@ module.exports = {
         setPath(dict)
 
     },
+
+    nameFromPath:(path) => {
+       return path.slice(-1)[0] 
+    }
 }
 
 const setPath = (dict) => {
