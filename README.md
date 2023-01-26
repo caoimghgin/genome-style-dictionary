@@ -15,6 +15,22 @@ npm install
 ## Project structure
 The project is made of these files and folders:
 
+* `/tokens` contains the design tokens input files (in JSON format) that contains brand folders (AMZN, AAPL, GOOG, etc.)
+* `/build` contains the generated output files (for different brands/formats)
+* `build.js` is the entry point used to generate the output files
+* `/extensions/lib` contains customizable parsers, transforms, transformGroups, filters, formats, actions and headers
+* `/config/lib/platforms` contains platform specific transforms (css, scss, es6, js, pList, compose, swift, etc)
+
+## Initial setup
+Install the project dependencies via the CLI command:
+
+```
+npm install
+```
+
+## Project structure
+The project is made of these files and folders:
+
 * `/src` contains the design tokens input files (in JSON format)
 * `/templates` contains the templates used to generate the output files
 * `/dist` contains the generated output files (in different formats)
@@ -24,15 +40,10 @@ The project is made of these files and folders:
 You can build the design tokens from the `/src/` folder using the CLI command:
 
 ```
-npm run build
-```
-of you can automatically re-build the tokens at every change using the command:
-
-```
-npm run watch
+yarn build
 ```
 
-The generated tokens are saved in the `/dist` folder, and organised by target platform.
+The generated tokens are saved in the `/build` folder, and organised by brand/platform.
 
 ## License
 
