@@ -1,12 +1,16 @@
 const { ENV } = require('../../../package.json')
 const name = "es6" // name defined in package.json/ENV/PLATFORMS array
-const transform = "csms/tokens-js"
+const transforms = [
+    "name/cti/constant", 
+    "size/px", 
+    "color/hex"
+]
 const ext = "js"
 let result = {}
 
 module.exports = (brand, platform) => {
     result[name] = {
-        transformGroup: transform,
+        transforms: transforms,
         buildPath: `${ENV.BUILD_DIR}/${brand}/${platform}/`,
         prefix: `${ENV.PREFIX}`,
         options: {

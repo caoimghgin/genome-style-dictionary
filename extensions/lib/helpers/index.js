@@ -1,9 +1,10 @@
-const { isColor } = require('../../../utils')
 const { COLOR_TYPE, CATEGORY, PALETTE } = require('../../../utils/lib/constants')
 const { ENV } = require('../../../package.json')
-
+const { isColor } = require('../../../utils')
 
 module.exports = {
+
+    isColor,
 
     parseColorTaxonomy: (dict) => {
         dict.taxonomy.system = ENV.PREFIX.toLowerCase()

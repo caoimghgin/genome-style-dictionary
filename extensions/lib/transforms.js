@@ -21,11 +21,7 @@ see where this is applicable.
 */
 
 const StyleDictionary = require('style-dictionary');
-const { ENV } = require('../../package.json')
-const { isColor } = require('../../utils')
-const { COLOR_TYPE, CATEGORY, PALETTE } = require('../../utils/lib/constants')
-
-const { parseColorTaxonomy, nameFromPath } = require('./helpers')
+const { parseColorTaxonomy, nameFromPath, isColor } = require('./helpers')
 
 /* 
 All pre-defined transforms included use the CTI structure for matching tokens. If your 
@@ -48,7 +44,7 @@ StyleDictionary.registerTransform({
 Add MetaData to attributes
 */
 StyleDictionary.registerTransform({
-    name: `gnm/attribute/sctisc`,
+    name: `gnm/attribute/cti`,
     type: 'attribute',
     transformer: function (token) {
 
