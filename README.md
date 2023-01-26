@@ -6,9 +6,9 @@ Genome Style Dictionary builds upon the excellent work of [Cristiano Rastelli](h
 Much of the code in genome-style-dictionary is leveraged from Cristianos [didoo/style-dictionary-demo](https://github.com/didoo/style-dictionary-demo) GitHub but is significantly refactored to ensure classes and functions are manageable and easy to read. Original code is prefixed with csms/ to give credit to the Cosmos Design System which it was created for. New code is prefixed with gnm/ to denote it is genome specific.
 
 ## Demo
-Genome Style Dictionary is based on a fictionalized future world (dystopian?) where a new mega-corporation named FANG buys Facebook, Amazon, Apple, Netflix. and Google. The CEO of FANG corporation has chosen a design system to align all brands and decreed all companies must adopt, or else! The system needs to accommodate all brands, all platforms, with minimal impact to each organizations unique look/feel. Additionally, the system must support dark-mode as well.
+The Genome Style Dictionary demo is based on a fictionalized future world (dystopian?) where a new mega-corporation named FANG buys Facebook, Amazon, Apple, Netflix. and Google. The CEO of FANG corporation has chosen a design system to align all brands and decreed all companies must adopt, or else! The system needs to accommodate all brands and platforms with minimal impact to each organizations unique look/feel. Additionally, the system must support dark-mode as well.
 
-This scenario is tremendously difficult, but it highlights all the edge cases we are likely to run into as we build white-label design systems.
+Just so you're aware, neither FANG Corp. or Genome Design System exists. However, this extreme scenario highlights all the edge cases Design Systems Professionals will encounter when building white-label design systems. It also highlights the need to customize Style Dictionary so you can take advantage of automated token.json output from Figma. The first thing we need to realize is the organization presented in Figma does not (and should not) be 1:1 with the organization developers want or need (and vice-versa).
 
 
 ## Initial setup
