@@ -8,6 +8,7 @@ const transforms = [
 ]
 const format = "csms/android/xml"
 const ext = "xml"
+
 let result = {}
 
 module.exports = (brand, platform) => {

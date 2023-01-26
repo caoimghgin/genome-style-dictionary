@@ -1,11 +1,15 @@
 const { ENV } = require('../../../package.json')
 const name = "es6" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
+    'attribute/cti',
+    'gnm/attribute/cti',
     "name/cti/constant", 
     "size/px", 
     "color/hex"
 ]
+const format = "javascript/es6"
 const ext = "js"
+
 let result = {}
 
 module.exports = (brand, platform) => {
@@ -28,6 +32,6 @@ module.exports = (brand, platform) => {
 function all() {
     return {
         destination: `es6/colors/semantic/${ENV.PREFIX}SemanticColors.${ext}`,
-        format: "javascript/es6",
+        format: format,
     }
 }

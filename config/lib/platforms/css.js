@@ -8,10 +8,10 @@ const transforms = [
     'content/icon',
     'size/rem',
     'color/css',
-    "gnm/console/log" 
   ]
 const format = "css/variables"
 const ext = "css"
+
 let result = {}
 
 module.exports = (brand, platform) => {

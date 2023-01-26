@@ -7,7 +7,6 @@ const transforms = [
     "time/seconds", 
     "size/px", 
     "color/css", 
-    "gnm/console/log" 
 ]
 const format = "scss/variables"
 const ext = "scss"

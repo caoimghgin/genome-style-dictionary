@@ -1,6 +1,8 @@
 const { ENV } = require('../../../package.json')
 const name = "pList" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
+    'attribute/cti',
+    'gnm/attribute/cti',
     "attribute/cti", 
     "name/cti/camel", 
     `gnm/size/pxToPt`

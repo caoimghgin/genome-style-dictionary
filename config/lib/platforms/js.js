@@ -1,9 +1,12 @@
 const { ENV } = require('../../../package.json')
 const name = "js" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
+    'attribute/cti',
+    'gnm/attribute/cti',
     "name/cti/constant", 
     "size/px", 
-    "color/hex"
+    "color/hex",
+    "gnm/console/log" 
 ]
 const ext = "js"
 
