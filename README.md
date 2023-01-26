@@ -3,7 +3,7 @@ This project is a demonstration of a setup of [Style Dictionary](https://github.
 
 Genome Style Dictionary builds upon the excellent work of [Cristiano Rastelli](https://medium.com/@didoo) whose 2018 [Medium article](https://medium.com/@didoo/how-to-manage-your-design-tokens-with-style-dictionary-98c795b938aa) shares his experiences in setting up Style Dictionary for the [Cosmos Design System](http://medium.com/badoo-developers/from-zero-to-cosmos-part-1-2d080fe35bf2) in Badoo. If you haven't read it, don't delay! This repo will still be here when you get back.
 
-Much of the code in genome-style-dictionary is leveraged from Cristianos [didoo/style-dictionary-demo](https://github.com/didoo/style-dictionary-demo) GitHub but is significantly refactored to ensure classes and functions are manageable and easy to read. Original code is prefixed with csms/ to give credit to the Cosmos Design System which it was created for. New code is prefixed with gnm/ to denote it is genome specific.
+Code in genome-style-dictionary is leveraged from Cristianos GitHub repo [didoo/style-dictionary-demo](https://github.com/didoo/style-dictionary-demo) but is significantly refactored to ensure classes and functions are manageable and easy to read. Original code is prefixed with csms/ to give credit to the Cosmos Design System which it was created for. New code is prefixed with gnm/ to denote it is genome specific.
 
 ## Demo
 The Genome Style Dictionary demo is based on a fictionalized future world (dystopian?) where a new mega-corporation named FANG buys Facebook, Amazon, Apple, Netflix. and Google. 
