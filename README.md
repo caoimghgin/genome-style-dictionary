@@ -10,7 +10,7 @@ The Genome Style Dictionary demo is based on a fictionalized future world (dysto
 
 The CEO of FANG corporation has chosen a design system to align all brands and decreed all companies must adopt, or else! The system needs to accommodate all brands and platforms with minimal impact to each organizations unique look/feel. Additionally, the system must support dark-mode as well.
 
-Neither FANG Corp. or Genome Design System exists. However, this extreme scenario highlights all the edge cases Design Systems Professionals will encounter when building white-label design systems. It also highlights the need to customize Style Dictionary so you can take advantage of automated token.json output from Figma. The first thing we need to realize is the organization presented in Figma does not (and should not) be 1:1 with the organization developers want or need (and vice-versa).
+Neither FANG Corp. or Genome Design System exists. However, this extreme scenario highlights all the edge cases Design Systems Professionals will encounter when building white-label design systems. It also highlights the need to customize Style Dictionary so we can take advantage of automated token.json output from Figma (rather than hand typing to match the desired CTI structure of Style Dictionary).
 
 
 ## Initial setup
