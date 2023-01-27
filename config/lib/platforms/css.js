@@ -1,13 +1,13 @@
 const { ENV } = require('../../../package.json')
 const name = "css" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
-    'attribute/cti',
-    'gnm/attribute/cti',
-    'name/cti/kebab',
-    'time/seconds',
-    'content/icon',
-    'size/rem',
-    'color/css',
+    "attribute/cti",
+    "gnm/attribute/ctv",
+    "name/cti/kebab",
+    "time/seconds",
+    "content/icon",
+    "size/rem",
+    "color/css",
   ]
 const format = "css/variables"
 const ext = "css"

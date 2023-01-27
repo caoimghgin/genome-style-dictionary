@@ -1,11 +1,10 @@
 const { ENV } = require('../../../package.json')
 const name = "pList" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
-    'attribute/cti',
-    'gnm/attribute/cti',
-    "attribute/cti", 
+    "attribute/cti",
+    "gnm/attribute/ctv",
     "name/cti/camel", 
-    `gnm/size/pxToPt`
+    "gnm/size/pxToPt"
 ] 
 const format = "csms/ios/plist"
 const ext = "pList"

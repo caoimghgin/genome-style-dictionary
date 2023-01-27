@@ -44,11 +44,10 @@ StyleDictionary.registerTransform({
 Add MetaData to attributes
 */
 StyleDictionary.registerTransform({
-    name: `gnm/attribute/cti`,
+    name: `gnm/attribute/ctv`,
     type: 'attribute',
     transformer: function (token) {
 
-        //CTVisc
         var result = {
                 taxonomy: {
                     category: undefined,

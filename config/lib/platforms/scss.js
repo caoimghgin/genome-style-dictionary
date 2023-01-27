@@ -2,7 +2,7 @@ const { ENV } = require('../../../package.json')
 const name = "scss" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
     "attribute/cti", 
-    "gnm/attribute/cti", 
+    "gnm/attribute/ctv", 
     "name/cti/kebab", 
     "time/seconds", 
     "size/px", 

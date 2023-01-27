@@ -13,10 +13,10 @@ const StyleDictionary = require('style-dictionary');
 
 StyleDictionary.registerTransformGroup({
     name: `csms/styleguide`,
-    transforms: ["attribute/cti", `gnm/attribute/cti`, "name/cti/kebab", "size/px", "color/css"] 
+    transforms: ["attribute/cti", "name/cti/kebab", "size/px", "color/css"] 
 });
 
 StyleDictionary.registerTransformGroup({
-    name: `csms/tokens-json`,
+    name: "csms/tokens-json",
     transforms: ["attribute/cti", "name/cti/kebab", "size/px", "color/css"]
 });

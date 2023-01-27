@@ -1,10 +1,10 @@
 const { ENV } = require('../../../package.json')
 const name = "xml" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [ 
-    'attribute/cti',
-    'gnm/attribute/cti',
+    "attribute/cti",
+    "gnm/attribute/ctv",
     "name/cti/camel", 
-    `gnm/size/pxToDp`
+    "gnm/size/pxToDp"
 ]
 const format = "csms/android/xml"
 const ext = "xml"

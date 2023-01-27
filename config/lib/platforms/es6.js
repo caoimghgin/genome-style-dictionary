@@ -1,8 +1,8 @@
 const { ENV } = require('../../../package.json')
 const name = "es6" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
-    'attribute/cti',
-    'gnm/attribute/cti',
+    "attribute/cti",
+    "gnm/attribute/ctv",
     "name/cti/constant", 
     "size/px", 
     "color/hex"
