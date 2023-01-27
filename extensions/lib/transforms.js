@@ -48,13 +48,13 @@ StyleDictionary.registerTransform({
     type: 'attribute',
     transformer: function (token) {
 
+        //CTVisc
         var result = {
                 taxonomy: {
-                    system: undefined,
                     category: undefined,
                     type: undefined,
+                    variety: undefined,
                     item: undefined,
-                    subItem: undefined,
                     state: undefined,
                     context: undefined,
             }, 

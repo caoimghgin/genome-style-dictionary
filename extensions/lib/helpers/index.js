@@ -4,10 +4,10 @@ const { isColor } = require('../../../utils')
 
 module.exports = {
 
+    // Expose isColor function from utils
     isColor,
 
     parseColorTaxonomy: (dict) => {
-        dict.taxonomy.system = ENV.PREFIX.toLowerCase()
         dict.taxonomy.category = PALETTE.includes(dict.name) ? COLOR_TYPE.PALETTE : CATEGORY.COLOR
 
         if (dict.taxonomy.category === COLOR_TYPE.PALETTE) {
