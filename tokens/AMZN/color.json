@@ -2,7 +2,7 @@
   "color" : {
     "palette" : {
       "primary" : {
-        "primary015" : {
+        "015" : {
           "description" : "$palette-primary-015 (A1)\n\nhex: : #F4F9FD\nL*: 97.66 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
           "type" : "color",
           "value" : "#f4f9fdff",
@@ -171,7 +171,7 @@
           }
         }
       },
-      "secondary" : {
+      "Secondary" : {
         "secondary015" : {
           "description" : "$palette-secondary-015 (B1)\n\nhex: : #F9F7FE\nL*: 97.56 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
           "type" : "color",
@@ -1701,7 +1701,7 @@
           }
         },
         "b&w" : {
-          "black" : {
+          "neutral950" : {
             "description" : "",
             "type" : "color",
             "value" : "#000000ff",
@@ -1713,7 +1713,7 @@
               }
             }
           },
-          "white" : {
+          "neutral000" : {
             "description" : "",
             "type" : "color",
             "value" : "#ffffffff",
@@ -1728,8 +1728,8 @@
         }
       },
       "alpha" : {
-        "black" : {
-          "black005" : {
+        "darken" : {
+          "darken05a" : {
             "description" : "black (5% opacity)",
             "type" : "color",
             "value" : "#0000000d",
@@ -1741,7 +1741,7 @@
               }
             }
           },
-          "black010" : {
+          "darken10a" : {
             "description" : "black (10% opacity)",
             "type" : "color",
             "value" : "#0000001a",
@@ -1753,7 +1753,7 @@
               }
             }
           },
-          "black020" : {
+          "darken20a" : {
             "description" : "black (20% opacity)",
             "type" : "color",
             "value" : "#00000033",
@@ -1765,7 +1765,7 @@
               }
             }
           },
-          "black030" : {
+          "darken30a" : {
             "description" : "black (30% opacity)",
             "type" : "color",
             "value" : "#0000004d",
@@ -1777,7 +1777,7 @@
               }
             }
           },
-          "black040" : {
+          "darken40a" : {
             "description" : "black (40% opacity)",
             "type" : "color",
             "value" : "#00000066",
@@ -1789,7 +1789,7 @@
               }
             }
           },
-          "black050" : {
+          "darken50a" : {
             "description" : "black (50% opacity)",
             "type" : "color",
             "value" : "#00000080",
@@ -1801,7 +1801,7 @@
               }
             }
           },
-          "black060" : {
+          "darken60a" : {
             "description" : "black (60% opacity)",
             "type" : "color",
             "value" : "#00000099",
@@ -1813,7 +1813,7 @@
               }
             }
           },
-          "black070" : {
+          "darken70a" : {
             "description" : "black (70% opacity)",
             "type" : "color",
             "value" : "#000000b3",
@@ -1825,7 +1825,7 @@
               }
             }
           },
-          "black080" : {
+          "darken80a" : {
             "description" : "black (80% opacity)",
             "type" : "color",
             "value" : "#000000cc",
@@ -1837,7 +1837,7 @@
               }
             }
           },
-          "black090" : {
+          "darken90a" : {
             "description" : "black (90% opacity)",
             "type" : "color",
             "value" : "#000000e6",
@@ -1849,7 +1849,7 @@
               }
             }
           },
-          "black095" : {
+          "darken95a" : {
             "description" : "black (95% opacity)",
             "type" : "color",
             "value" : "#000000f2",
@@ -1862,8 +1862,8 @@
             }
           }
         },
-        "white" : {
-          "white005" : {
+        "lighten" : {
+          "lighten05a" : {
             "description" : "white (5% opacity)",
             "type" : "color",
             "value" : "#ffffff0d",
@@ -1875,7 +1875,7 @@
               }
             }
           },
-          "white010" : {
+          "lighten10a" : {
             "description" : "white (10% opacity)",
             "type" : "color",
             "value" : "#ffffff1a",
@@ -1887,7 +1887,7 @@
               }
             }
           },
-          "white020" : {
+          "lighten20a" : {
             "description" : "white (20% opacity)",
             "type" : "color",
             "value" : "#ffffff33",
@@ -1899,7 +1899,7 @@
               }
             }
           },
-          "white030" : {
+          "lighten30a" : {
             "description" : "white (30% opacity)",
             "type" : "color",
             "value" : "#ffffff4d",
@@ -1911,7 +1911,7 @@
               }
             }
           },
-          "white040" : {
+          "lighten40a" : {
             "description" : "white (40% opacity)",
             "type" : "color",
             "value" : "#ffffff66",
@@ -1923,7 +1923,7 @@
               }
             }
           },
-          "white050" : {
+          "lighten50a" : {
             "description" : "white (50% opacity)",
             "type" : "color",
             "value" : "#ffffff80",
@@ -1935,7 +1935,7 @@
               }
             }
           },
-          "white060" : {
+          "lighten60a" : {
             "description" : "white (60% opacity)",
             "type" : "color",
             "value" : "#ffffff99",
@@ -1947,7 +1947,7 @@
               }
             }
           },
-          "white070" : {
+          "lighten70a" : {
             "description" : "white (70% opacity)",
             "type" : "color",
             "value" : "#ffffffb3",
@@ -1959,7 +1959,7 @@
               }
             }
           },
-          "white080" : {
+          "lighten80a" : {
             "description" : "white (80% opacity)",
             "type" : "color",
             "value" : "#ffffffcc",
@@ -1971,7 +1971,7 @@
               }
             }
           },
-          "white090" : {
+          "lighten90a" : {
             "description" : "white (90% opacity)",
             "type" : "color",
             "value" : "#ffffffe6",
@@ -1983,7 +1983,7 @@
               }
             }
           },
-          "white095" : {
+          "lighten95a" : {
             "description" : "white (95% opacity)",
             "type" : "color",
             "value" : "#fffffff2",
@@ -1994,6 +1994,18 @@
                 "exportKey" : "color"
               }
             }
+          }
+        }
+      },
+      "foobar" : {
+        "description" : "$palette-primary-015 (A1)\n\nhex: : #F4F9FD\nL*: 97.66 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",
+        "type" : "color",
+        "value" : "#f4f9fdff",
+        "blendMode" : "normal",
+        "extensions" : {
+          "org.lukasoppermann.figmaDesignTokens" : {
+            "styleId" : "S:e111da4106a1720bc0e8235059579c9f0da70ceb,",
+            "exportKey" : "color"
           }
         }
       }

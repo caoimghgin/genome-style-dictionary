@@ -13,7 +13,7 @@
     "BUILD_DIR": "build",
     "PREFIX": "GNM",
     "//PLATFORMS": ["css", "scss", "csms-scss", "csms-ios-plist", "js"],
-    "PLATFORMS": ["scss", "js", "es6", "pList", "xml"]
+    "PLATFORMS": ["css", "scss", "js", "es6", "pList", "xml"]
   },  
   "author": "Kevin Muldoon",
   "license": "MIT",

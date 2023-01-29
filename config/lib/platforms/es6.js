@@ -1,4 +1,6 @@
 const { ENV } = require('../../../package.json')
+const { CATEGORY } = require('../../../utils/lib/constants')
+
 const name = "es6" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
     "attribute/cti",
@@ -7,6 +9,7 @@ const transforms = [
     "size/px", 
     "color/hex"
 ]
+const fileHeader = "gnm/header"
 const format = "javascript/es6"
 const ext = "js"
 
@@ -16,9 +19,8 @@ module.exports = (brand, platform) => {
     result[name] = {
         transforms: transforms,
         buildPath: `${ENV.BUILD_DIR}/${brand}/${platform}/`,
-        prefix: `${ENV.PREFIX}`,
         options: {
-            showFileHeader: false,
+            fileHeader: fileHeader,
             outputReferences: true,
         },
         files: [

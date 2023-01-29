@@ -1,4 +1,6 @@
 const { ENV } = require('../../../package.json')
+const { CATEGORY } = require('../../../utils/lib/constants')
+
 const name = "xml" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [ 
     "attribute/cti",
@@ -6,6 +8,7 @@ const transforms = [
     "name/cti/camel", 
     "gnm/size/pxToDp"
 ]
+const fileHeader = "gnm/header"
 const format = "csms/android/xml"
 const ext = "xml"
 
@@ -15,9 +18,8 @@ module.exports = (brand, platform) => {
     result[name] = {
         transforms: transforms,
         buildPath: `${ENV.BUILD_DIR}/${brand}/${platform}/`,
-        prefix: `${ENV.PREFIX}`,
         options: {
-            showFileHeader: false,
+            fileHeader: fileHeader,
             outputReferences: true,
         },
         files: [
@@ -27,10 +29,16 @@ module.exports = (brand, platform) => {
     return result
 }
 
-function all() {
+const all = () => {
     return {
-        destination: `colors/semantic/${ENV.PREFIX}SemanticColors.${ext}`,
+        destination: `${ENV.PREFIX}Variables.${ext}`,
         format: format
     }
 }
 
+// const palette = () => {
+//     return {
+//         destination: `colors/semantic/${ENV.PREFIX}SemanticColors.${ext}`,
+//         format: format
+//     }
+// }

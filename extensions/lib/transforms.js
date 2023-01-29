@@ -21,7 +21,7 @@ see where this is applicable.
 */
 
 const StyleDictionary = require('style-dictionary');
-const { parseColorTaxonomy, nameFromPath, isColor } = require('./helpers')
+const { parseCtvAttributes, parseColorTaxonomy, nameFromPath, isColor } = require('./helpers')
 
 /* 
 All pre-defined transforms included use the CTI structure for matching tokens. If your 
@@ -36,7 +36,7 @@ StyleDictionary.registerTransform({
     name: `gnm/console/log`,
     type: 'attribute',
     transformer: function (token) {
-        console.log(token)
+        // console.log(token)
     }
 })
 
@@ -47,26 +47,9 @@ StyleDictionary.registerTransform({
     name: `gnm/attribute/ctv`,
     type: 'attribute',
     transformer: function (token) {
-
-        var result = {
-                taxonomy: {
-                    category: undefined,
-                    type: undefined,
-                    variety: undefined,
-                    item: undefined,
-                    state: undefined,
-                    context: undefined,
-            }, 
-            name: undefined,
-            path: undefined,
-        };
-
-        result.name = nameFromPath(token.path)
-
-        if (isColor(token.value)) { parseColorTaxonomy(result) }
-
-        const attributes = token.attributes || {};
-        return Object.assign(result, attributes);
+        const result = parseCtvAttributes(token)
+        token.path = ((result.path !== undefined) ? result.path : [result.taxonomy.system,...token.path])
+        return Object.assign(result, token.attributes);
     }
 })
 

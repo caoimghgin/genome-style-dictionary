@@ -26,7 +26,18 @@ const StyleDictionary = require('style-dictionary');
 const { ENV } = require('../../package.json')
 
 StyleDictionary.registerFileHeader({
-  name: `gnm/header/hello`,
+  name: `gnm/header`,
+  fileHeader: (defaultMessage) => {
+    return [
+      `Do not edit directly. Variables are generated via Style Dictionary that reference`,
+      `files exported from Figma via plugins such as 'Design Tokens', 'Tokens Studio',`,
+      `'DK Theme Exporter', or manually typed key/values in JSON files.`,
+    ]
+  }
+});
+
+StyleDictionary.registerFileHeader({
+  name: `sd/header/hello`,
   fileHeader: (defaultMessage) => {
     // defaultMessage are the 2 lines above that appear in the default file header
     // you can use this to add a message before or after the default message 👇
@@ -40,5 +51,4 @@ StyleDictionary.registerFileHeader({
     ]
   }
 });
-
 

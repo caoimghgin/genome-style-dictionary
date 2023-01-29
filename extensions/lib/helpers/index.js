@@ -1,45 +1,73 @@
-const { COLOR_TYPE, CATEGORY, PALETTE } = require('../../../utils/lib/constants')
+const { CATEGORY, SEMANTIC } = require('../../../utils/lib/constants')
 const { ENV } = require('../../../package.json')
-const { isColor } = require('../../../utils')
+const { isColor } = require('../../../utils');
+const _ = require("lodash");
 
 module.exports = {
 
-    // Expose isColor function from utils
-    isColor,
+    parseCtvAttributes: (token) => {
 
-    parseColorTaxonomy: (dict) => {
-        dict.taxonomy.category = PALETTE.includes(dict.name) ? COLOR_TYPE.PALETTE : CATEGORY.COLOR
+        let result = attributes(token)
+        const fullName = token.path.join('')
 
-        if (dict.taxonomy.category === COLOR_TYPE.PALETTE) {
-            //
-            // I want to split off alpha and numeric values of the color name to create a path, if not already done
-            //
-            const semanticWeightSplit = dict.name.match(/[^\d]+|\d+/g);
-            if (semanticWeightSplit.length === 2) {
-                dict.taxonomy.type = semanticWeightSplit[0]
-                dict.taxonomy.state = semanticWeightSplit[1]
-            }
+        if (isColor(token.value)) {
+            SEMANTIC.every(item => {
+                if (fullName.endsWith(item)) {
+                    const typeState = item.match(/[^\d]+|\d+/g);
+                    result.taxonomy.system = `${ENV.PREFIX}`
+                    result.taxonomy.category = CATEGORY.SEMANTIC
+                    result.taxonomy.type = parseColorType(item)
+                    result.taxonomy.state = parseColorState(item)
+                    result.path = parsePath(result)
+                    result.name = parseName(result)
+                    return false; // exit loop
+                }
+                return true; // continue loop
+            });
         }
 
-        setPath(dict)
-
+        return result
     },
+}
 
-    nameFromPath:(path) => {
-       return path.slice(-1)[0] 
+const parsePath = (obj) => {
+    let result = Object.keys(_.pickBy(obj.taxonomy, v => v !== undefined))
+        .map(function (key) {
+            return obj.taxonomy[key];
+        });
+    return result.length ? result : undefined
+}
+
+const parseName = (obj) => {
+    return obj.path.join('-')
+}
+
+const parseBrand = (token) => {
+    return token.filePath.split('/')[1]
+}
+
+const parseColorType = (obj) => {
+    let arr = obj.match(/[^\d]+|\d+/g)
+    return arr[0];
+}
+
+const parseColorState = (obj) => {
+    let arr = obj.match(/[^\d]+|\d+/g)
+    return arr.slice(-arr.length + 1).join('')
+}
+
+const attributes = (token) => {
+    return {
+        name: undefined,
+        path: undefined,
+        taxonomy: {
+            system: parseBrand(token),
+            category: undefined,
+            type: undefined,
+            variety: undefined,
+            item: undefined,
+            state: undefined,
+            context: undefined,
+        },
     }
-}
-
-const setPath = (dict) => {
-
-    // get all values of the dictionary
-    const values = Object.keys(dict.taxonomy).map(function (key) {
-        return dict.taxonomy[key];
-    });
-
-    const path = values.filter(function (item) {
-        return item !== undefined;
-    });
-
-    dict.path = path
-}
+};

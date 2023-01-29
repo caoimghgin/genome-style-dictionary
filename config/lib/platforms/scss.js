@@ -1,4 +1,6 @@
 const { ENV } = require('../../../package.json')
+const { CATEGORY } = require('../../../utils/lib/constants')
+
 const name = "scss" // name defined in package.json/ENV/PLATFORMS array
 const transforms = [
     "attribute/cti", 
@@ -8,6 +10,7 @@ const transforms = [
     "size/px", 
     "color/css", 
 ]
+const fileHeader = "gnm/header"
 const format = "scss/variables"
 const ext = "scss"
 
@@ -17,9 +20,8 @@ module.exports = (brand, platform) => {
     result[name] = {
         transforms: transforms,
         buildPath: `${ENV.BUILD_DIR}/${brand}/${platform}/`,
-        prefix: `${ENV.PREFIX}`,
         options: {
-            showFileHeader: false,
+            fileHeader: fileHeader,
             outputReferences: true,
         },
         files: [
