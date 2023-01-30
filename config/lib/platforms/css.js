@@ -28,6 +28,8 @@ module.exports = (brand, platform) => {
         files: [
             all(),
             palette(),
+            contextualLight(),
+            contextualDark(),
             definitive(brand)
         ],
     }
@@ -56,10 +58,27 @@ function definitive(brand) {
         destination: `colors/definitive/${brand}DefinitiveColors.${ext}`,
         format: format,
         filter: function (token) {
-            console.log("CATEGORY.PALETTE",CATEGORY.SEMANTIC )
-            console.log("CATEGORY.attributes.taxonomy.category",CATEGORY.PALETTE )
+            return token.attributes.taxonomy.category === undefined
+        }
+    }
+}
 
-            return token.attributes.taxonomy.category !== CATEGORY.SEMANTIC
+function contextualLight() {
+    return {
+        destination: `colors/contextual/light/${ENV.PREFIX}ContextualColors.${ext}`,
+        format: format,
+        filter: function (token) {
+            return ((token.attributes.taxonomy.category === CATEGORY.CONTEXTUAL) && (token.attributes.mode === "light"))
+        }
+    }
+}
+
+function contextualDark() {
+    return {
+        destination: `colors/contextual/dark/${ENV.PREFIX}ContextualColors.${ext}`,
+        format: format,
+        filter: function (token) {
+            return ((token.attributes.taxonomy.category === CATEGORY.CONTEXTUAL) && (token.attributes.mode === "dark"))
         }
     }
 }

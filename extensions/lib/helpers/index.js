@@ -1,4 +1,4 @@
-const { CATEGORY, SEMANTIC } = require('../../../utils/lib/constants')
+const { CATEGORY, SEMANTIC, CONTEXTUAL } = require('../../../utils/lib/constants')
 const { ENV } = require('../../../package.json')
 const { isColor } = require('../../../utils');
 const _ = require("lodash");
@@ -6,28 +6,78 @@ const _ = require("lodash");
 module.exports = {
 
     parseCtvAttributes: (token) => {
-
         let result = attributes(token)
-        const fullName = token.path.join('')
-
         if (isColor(token.value)) {
-            SEMANTIC.every(item => {
-                if (fullName.endsWith(item)) {
-                    const typeState = item.match(/[^\d]+|\d+/g);
-                    result.taxonomy.system = `${ENV.PREFIX}`
-                    result.taxonomy.category = CATEGORY.SEMANTIC
-                    result.taxonomy.type = parseColorType(item)
-                    result.taxonomy.state = parseColorState(item)
-                    result.path = parsePath(result)
-                    result.name = parseName(result)
-                    return false; // exit loop
-                }
-                return true; // continue loop
-            });
+            result = parseSemanticColors(token, result)
+            if (!isSemantic(result)) {
+                result = parseContextualColors(token, result)
+            }
         }
-
         return result
     },
+}
+
+const parseSemanticColors = (token, attrs) => {
+
+    let result = attrs
+
+    SEMANTIC.every(item => {
+        if (parseFullName(token).endsWith(item.toUpperCase())) {
+            result.taxonomy.system = `${ENV.PREFIX}`
+            result.taxonomy.category = CATEGORY.SEMANTIC
+            result.taxonomy.type = parseColorType(item)
+            result.taxonomy.state = parseColorState(item)
+            result.path = parsePath(result)
+            result.name = parseName(result)
+            return false; // exit loop
+        }
+        return true; // continue loop
+    });
+    return result
+}
+
+const parseContextualColors = (token, attrs) => {
+
+    let result = attrs
+
+    CONTEXTUAL.every(item => {
+        if (parseFullName(token).endsWith(item.toUpperCase())) {
+            let zzz  = item.split(/(?=[A-Z])/)
+            result.mode = token.path.includes("dark") ? "dark" : "light"
+
+             //system, category, type, item, state
+
+            result.taxonomy.system = `${ENV.PREFIX}`
+            result.taxonomy.category = CATEGORY.CONTEXTUAL
+            result.taxonomy.type = zzz.includes("bkg") ? "bkg" : undefined
+            result.taxonomy.item = zzz.includes("Paper") ? "paper" : undefined
+            result.taxonomy.state = zzz.includes("Default") ? "default" : result.taxonomy.state 
+            result.taxonomy.state = zzz.includes("Hushed") ? "hushed" : result.taxonomy.state 
+            result.taxonomy.state = zzz.includes("Muted") ? "muted" : result.taxonomy.state 
+
+            result.path = parsePath(result)
+            result.name = parseName(result)
+
+            
+
+            console.log("FOUND CONTEXTUAL COLOR...", zzz, result)
+
+
+            return false; // exit loop
+        }
+        return true; // continue loop
+    });
+    return result
+
+}
+
+
+const parseFullName = (token) => {
+    return token.path.join('').toUpperCase()
+}
+
+const parseName = (obj) => {
+    return obj.path.join('-')
 }
 
 const parsePath = (obj) => {
@@ -36,10 +86,6 @@ const parsePath = (obj) => {
             return obj.taxonomy[key];
         });
     return result.length ? result : undefined
-}
-
-const parseName = (obj) => {
-    return obj.path.join('-')
 }
 
 const parseBrand = (token) => {
@@ -60,6 +106,7 @@ const attributes = (token) => {
     return {
         name: undefined,
         path: undefined,
+        mode: undefined,
         taxonomy: {
             system: parseBrand(token),
             category: undefined,
@@ -71,3 +118,7 @@ const attributes = (token) => {
         },
     }
 };
+
+const isSemantic = (attrs) => {
+    attrs.taxonomy.category === CATEGORY.CONTEXTUAL ? true : false
+}

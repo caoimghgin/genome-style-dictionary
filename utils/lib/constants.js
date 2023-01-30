@@ -1,4 +1,5 @@
 const { SEMANTIC } = require('./gnm-semantic')
+const { CONTEXTUAL } = require('./gnm-contextual')
 
 const CATEGORY = Object.freeze({
 	SEMANTIC: "palette",
@@ -10,4 +11,5 @@ const CATEGORY = Object.freeze({
 module.exports = {
     CATEGORY,
 	SEMANTIC,
+	CONTEXTUAL,
 }
