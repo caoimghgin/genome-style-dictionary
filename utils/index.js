@@ -15,6 +15,22 @@ module.exports = {
     // which is more reliable that referencing the CTI structure alone. 
     isColor: (value) => {
         return tinycolor(value).isValid()
-    }
+    },
+
+    // getContextualColors: () => {
+    //     let foo = []
+    //     NEW_CONTEXTUAL.every(item => {
+    //         let attr = attributes(token)
+    //         attr.taxonomy = {...attr.taxonomy, ...item}
+    //         attr.path = parseAttributesPath(attr)
+    //         attr.name = parseAttributesName(attr)
+    //         attr.key = parseAttributesKey(attr)
+    //         attr.taxonomy.system = `${ENV.PREFIX}`
+    //         attr.taxonomy.category = CATEGORY.CONTEXTUAL
+    //         foo.push(attr)
+    //         return true;
+    //     });
+    // }
+ 
     
 }

@@ -1,18 +1,48 @@
-const { CATEGORY, SEMANTIC, CONTEXTUAL } = require('../../../utils/lib/constants')
+const { CATEGORY, SEMANTIC, CONTEXTUAL, NEW_CONTEXTUAL } = require('../../../utils/lib/constants')
 const { ENV } = require('../../../package.json')
 const { isColor } = require('../../../utils');
 const _ = require("lodash");
+const singleton = require('../../../utils/SingletonFactory')
 
 module.exports = {
 
     parseCtvAttributes: (token) => {
+
+
+        // console.log("My singleton firstName", singleton.firstName)
+
         let result = attributes(token)
+
         if (isColor(token.value)) {
+
+            // let foo = []
+            // NEW_CONTEXTUAL.every(item => {
+            //     let attr = attributes(token)
+            //     attr.taxonomy = {...attr.taxonomy, ...item}
+            //     attr.path = parseAttributesPath(attr)
+            //     attr.name = parseAttributesName(attr)
+            //     attr.key = parseAttributesKey(attr)
+            //     attr.taxonomy.system = `${ENV.PREFIX}`
+            //     attr.taxonomy.category = CATEGORY.CONTEXTUAL
+            //     foo.push(attr)
+            //     return true;
+            // });
+            // const foundItfoundIt = foo.filter(obj => obj.key.endsWith("ONLIGHT"));
+            // console.log(foundItfoundIt)
+
+
             result = parseSemanticColors(token, result)
+
             if (!isSemantic(result)) {
                 result = parseContextualColors(token, result)
             }
+
+            // if (result.taxonomy.category === undefined) {
+            //     console.log(token)
+            // }
         }
+
+        if (result.taxonomy.system === undefined) { result.taxonomy.system = parseBrand(token) }
         return result
     },
 }
@@ -27,8 +57,8 @@ const parseSemanticColors = (token, attrs) => {
             result.taxonomy.category = CATEGORY.SEMANTIC
             result.taxonomy.type = parseColorType(item)
             result.taxonomy.state = parseColorState(item)
-            result.path = parsePath(result)
-            result.name = parseName(result)
+            result.path = parseAttributesPath(result)
+            result.name = parseAttributesName(result)
             return false; // exit loop
         }
         return true; // continue loop
@@ -55,13 +85,8 @@ const parseContextualColors = (token, attrs) => {
             result.taxonomy.state = zzz.includes("Hushed") ? "hushed" : result.taxonomy.state 
             result.taxonomy.state = zzz.includes("Muted") ? "muted" : result.taxonomy.state 
 
-            result.path = parsePath(result)
-            result.name = parseName(result)
-
-            
-
-            console.log("FOUND CONTEXTUAL COLOR...", zzz, result)
-
+            result.path = parseAttributesPath(result)
+            result.name = parseAttributesName(result)
 
             return false; // exit loop
         }
@@ -76,11 +101,11 @@ const parseFullName = (token) => {
     return token.path.join('').toUpperCase()
 }
 
-const parseName = (obj) => {
+const parseAttributesName = (obj) => {
     return obj.path.join('-')
 }
 
-const parsePath = (obj) => {
+const parseAttributesPath = (obj) => {
     let result = Object.keys(_.pickBy(obj.taxonomy, v => v !== undefined))
         .map(function (key) {
             return obj.taxonomy[key];
@@ -102,13 +127,20 @@ const parseColorState = (obj) => {
     return arr.slice(-arr.length + 1).join('')
 }
 
+const parseAttributesKey = (obj) => {
+    let key = obj.path.map(function(x){ return x.toUpperCase(); })
+    return key.join("")
+    // console.log(key.join(""))
+}
+
 const attributes = (token) => {
     return {
+        key: undefined,
         name: undefined,
         path: undefined,
         mode: undefined,
         taxonomy: {
-            system: parseBrand(token),
+            system: undefined,
             category: undefined,
             type: undefined,
             variety: undefined,
