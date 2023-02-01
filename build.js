@@ -3,9 +3,12 @@ const { ENV } = require('./package.json')
 const { getDirectories } = require('./utils')
 const config = require('./config')
 require('./extensions')
+const singleton = require('./utils/SingletonFactory')
 
 const brands = getDirectories(ENV.SOURCE_DIR)
 const platforms = ENV.PLATFORMS
+
+console.log("singleton", singleton.init())
 
 brands.map(brand => {
     platforms.map(platform => {

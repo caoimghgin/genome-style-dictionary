@@ -2,7 +2,6 @@ const { CATEGORY, SEMANTIC, CONTEXTUAL, NEW_CONTEXTUAL } = require('../../../uti
 const { ENV } = require('../../../package.json')
 const { isColor } = require('../../../utils');
 const _ = require("lodash");
-const singleton = require('../../../utils/SingletonFactory')
 
 module.exports = {
 

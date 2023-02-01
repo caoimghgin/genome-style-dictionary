@@ -51,19 +51,19 @@ const txtXXX = [
 
 ]
 
-const attributes = () => {
+const attributes = (name, path, mode, system, category, type, variety, item, state, context) => {
     return {
-        name: undefined,
-        path: undefined,
-        mode: undefined,
+        name: name,
+        path: path,
+        mode: mode,
         taxonomy: {
-            system: undefined,
-            category: undefined,
-            type: undefined,
-            variety: undefined,
-            item: undefined,
-            state: undefined,
-            context: undefined,
+            system: system,
+            category: category,
+            type: type,
+            variety: variety,
+            item: item,
+            state: state,
+            context: context,
         },
     }
 };
