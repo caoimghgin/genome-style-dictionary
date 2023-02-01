@@ -142,7 +142,7 @@ const attributes = (token) => {
             system: undefined,
             category: undefined,
             type: undefined,
-            variety: undefined,
+            variant: undefined,
             item: undefined,
             state: undefined,
             context: undefined,

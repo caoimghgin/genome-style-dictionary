@@ -14,44 +14,44 @@ const txt = [
 ]
 
 const paperXXX = [
-    {type: "bkg", variety: undefined, item: "paper", state: "default", context: undefined}, // "bkg-paper-default"
-    {type: "bkg", variety: undefined, item: "paper", state: "hushed", context: undefined}, // "bkg-paper-hushed"
-    {type: "bkg", variety: undefined, item: "paper", state: "muted", context: undefined}, // "bkg-paper-muted"
+    {type: "bkg", variant: undefined, item: "paper", state: "default", context: undefined}, // "bkg-paper-default"
+    {type: "bkg", variant: undefined, item: "paper", state: "hushed", context: undefined}, // "bkg-paper-hushed"
+    {type: "bkg", variant: undefined, item: "paper", state: "muted", context: undefined}, // "bkg-paper-muted"
 ]
 
 const txtXXX = [
-    {type: "txt", variety: undefined, item: undefined, state: "800", context: "onPaper"}, // "-txt-800-onPaper"
-    {type: "txt", variety: undefined, item: undefined, state: "600", context: "onPaper"}, // "-txt-600-onPaper"
-    {type: "txt", variety: undefined, item: undefined, state: "400", context: "onPaper"}, // "-txt-200-onPaper"
-    {type: "txt", variety: undefined, item: undefined, state: "200", context: "onPaper"}, // "-txt-200-onPaper"
+    {type: "txt", variant: undefined, item: undefined, state: "800", context: "onPaper"}, // "-txt-800-onPaper"
+    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onPaper"}, // "-txt-600-onPaper"
+    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onPaper"}, // "-txt-200-onPaper"
+    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onPaper"}, // "-txt-200-onPaper"
 
-    {type: "txt", variety: undefined, item: undefined, state: "800", context: "onLight"}, // "-txt-800-onLight"
-    {type: "txt", variety: undefined, item: undefined, state: "600", context: "onLight"}, // "-txt-600-onLight"
-    {type: "txt", variety: undefined, item: undefined, state: "400", context: "onLight"}, // "-txt-400-onLight"
-    {type: "txt", variety: undefined, item: undefined, state: "200", context: "onLight"}, // "-txt-200-onLight"
+    {type: "txt", variant: undefined, item: undefined, state: "800", context: "onLight"}, // "-txt-800-onLight"
+    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onLight"}, // "-txt-600-onLight"
+    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onLight"}, // "-txt-400-onLight"
+    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onLight"}, // "-txt-200-onLight"
 
-    {type: "txt", variety: undefined, item: undefined, state: "800", context: "onDark"},  // "-txt-800-onDark"
-    {type: "txt", variety: undefined, item: undefined, state: "600", context: "onDark"},  // "-txt-800-onDark"
-    {type: "txt", variety: undefined, item: undefined, state: "400", context: "onDark"},  // "-txt-800-onDark"
-    {type: "txt", variety: undefined, item: undefined, state: "200", context: "onDark"},  // "-txt-800-onDark"
+    {type: "txt", variant: undefined, item: undefined, state: "800", context: "onDark"},  // "-txt-800-onDark"
+    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onDark"},  // "-txt-800-onDark"
+    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onDark"},  // "-txt-800-onDark"
+    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onDark"},  // "-txt-800-onDark"
 
-    {type: "bkg", variety: "primary", item: "button", state: "default", context: "onPaper"},
-    {type: "bkg", variety: "primary", item: "button", state: "hover", context: "onPaper"},
-    {type: "bkg", variety: "primary", item: "button", state: "active", context: "onPaper"},
-    {type: "bkg", variety: "primary", item: "button", state: "disabled", context: "onPaper"},
+    {type: "bkg", variant: "primary", item: "button", state: "default", context: "onPaper"},
+    {type: "bkg", variant: "primary", item: "button", state: "hover", context: "onPaper"},
+    {type: "bkg", variant: "primary", item: "button", state: "active", context: "onPaper"},
+    {type: "bkg", variant: "primary", item: "button", state: "disabled", context: "onPaper"},
 
 
 
 // $gnm-color-bkg-primary-button-default-onPaper
 
-    // {type: "txt", variety: undefined, item: undefined, state: "800", context: "onPaper"}, // txt-800-onPaper
-    // {type: "txt", variety: undefined, item: undefined, state: "600", context: "onPaper"}, // txt-600-onPaper
-    // {type: "txt", variety: undefined, item: undefined, state: "400", context: "onPaper"}, // txt-400-onPaper
-    // {type: "txt", variety: undefined, item: undefined, state: "200", context: "onPaper"}, // txt-200-onPaper
+    // {type: "txt", variant: undefined, item: undefined, state: "800", context: "onPaper"}, // txt-800-onPaper
+    // {type: "txt", variant: undefined, item: undefined, state: "600", context: "onPaper"}, // txt-600-onPaper
+    // {type: "txt", variant: undefined, item: undefined, state: "400", context: "onPaper"}, // txt-400-onPaper
+    // {type: "txt", variant: undefined, item: undefined, state: "200", context: "onPaper"}, // txt-200-onPaper
 
 ]
 
-const attributes = (name, path, mode, system, category, type, variety, item, state, context) => {
+const attributes = (name, path, mode, system, category, type, variant, item, state, context) => {
     return {
         name: name,
         path: path,
@@ -60,7 +60,7 @@ const attributes = (name, path, mode, system, category, type, variety, item, sta
             system: system,
             category: category,
             type: type,
-            variety: variety,
+            variant: variant,
             item: item,
             state: state,
             context: context,
