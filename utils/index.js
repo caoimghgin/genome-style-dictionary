@@ -1,7 +1,6 @@
+const { ENV } = require('../package.json')
 const tinycolor = require('tinycolor2');
 const fs = require('fs');
-const { ENV } = require('../package.json')
-const { CATEGORY } = require('./lib/constants')
 
 const _ = require("lodash");
 
@@ -48,11 +47,11 @@ var self = module.exports = {
         taxonomy.forEach((item) => {
             let attr = self.attributes()
             attr.taxonomy = { ...attr.taxonomy, ...item }
-            attr.path = parseAttributesPath(attr)
-            attr.name = parseAttributesName(attr)
-            attr.key = parseAttributesKey(attr)
-            attr.taxonomy.system = `${ENV.PREFIX}`
+            attr.taxonomy.system = `${ENV.PREFIX}`.toLowerCase()
             attr.taxonomy.category = category
+            attr.name = parseTaxonomyToName(attr.taxonomy)
+            attr.path = parseTaxonomyToPath(attr.taxonomy)
+            attr.key = parseTaxonomyToKey(attr.taxonomy)
             result.push(attr)
         });
         return result
@@ -68,11 +67,25 @@ const parseAttributesPath = (obj) => {
     return result.length ? result : undefined
 }
 
-const parseAttributesName = (obj) => {
-    return obj.path.join('-')
+const parseTaxonomyToPath = (obj) => {
+    let result = Object.keys(_.pickBy(obj, item => item !== undefined))
+        .map(function (key) {
+            return obj[key];
+        });
+    return result.length ? result : undefined
 }
 
-const parseAttributesKey = (obj) => {
-    let key = obj.path.map(function (item) { return item.toUpperCase() })
+const parseTaxonomyToName = (obj) => {
+    let taxonomy = {...obj}
+    delete taxonomy.system
+    delete taxonomy.category
+    return parseTaxonomyToPath(taxonomy).join('-')
+}
+
+const parseTaxonomyToKey = (obj) => {
+    let taxonomy = {...obj}
+    delete taxonomy.system
+    delete taxonomy.category
+    let key = parseTaxonomyToPath(taxonomy).map(function (item) { return item.toUpperCase() })
     return key.join("")
 }

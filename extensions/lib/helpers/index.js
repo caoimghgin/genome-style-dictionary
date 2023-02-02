@@ -1,4 +1,4 @@
-const { CATEGORY, SEMANTIC, CONTEXTUAL, NEW_CONTEXTUAL } = require('../../../utils/lib/constants')
+const { CATEGORY, SEMANTIC, CONTEXTUAL } = require('../../../utils/lib/constants')
 const { ENV } = require('../../../package.json')
 const { isColor } = require('../../../utils');
 const _ = require("lodash");
@@ -7,28 +7,9 @@ module.exports = {
 
     parseCtvAttributes: (token) => {
 
-
-        // console.log("My singleton firstName", singleton.firstName)
-
         let result = attributes(token)
 
         if (isColor(token.value)) {
-
-            // let foo = []
-            // NEW_CONTEXTUAL.every(item => {
-            //     let attr = attributes(token)
-            //     attr.taxonomy = {...attr.taxonomy, ...item}
-            //     attr.path = parseAttributesPath(attr)
-            //     attr.name = parseAttributesName(attr)
-            //     attr.key = parseAttributesKey(attr)
-            //     attr.taxonomy.system = `${ENV.PREFIX}`
-            //     attr.taxonomy.category = CATEGORY.CONTEXTUAL
-            //     foo.push(attr)
-            //     return true;
-            // });
-            // const foundItfoundIt = foo.filter(obj => obj.key.endsWith("ONLIGHT"));
-            // console.log(foundItfoundIt)
-
 
             result = parseSemanticColors(token, result)
 
@@ -36,9 +17,6 @@ module.exports = {
                 result = parseContextualColors(token, result)
             }
 
-            // if (result.taxonomy.category === undefined) {
-            //     console.log(token)
-            // }
         }
 
         if (result.taxonomy.system === undefined) { result.taxonomy.system = parseBrand(token) }
