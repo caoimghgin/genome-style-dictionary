@@ -8,6 +8,11 @@ const CATEGORY = Object.freeze({
 	TYPOGRAPHY: "typography",
 })
 
+const MODE = Object.freeze({
+	LIGHT: "light",
+	DARK: "dark"
+})
+
 const SEMANTIC_TAXONOMY = [
 
     {type: undefined, variant: "primary", item: undefined, state: "015", context: undefined}, // primary-015
@@ -200,6 +205,14 @@ const SEMANTIC_TAXONOMY = [
 ]
 
 const CONTEXTUAL_TAXONOMY = [
+
+    //
+    // Contextual specific always defines an 'item' or component it is created to be used for
+    //
+    {type: "bkg", variant: undefined, item: "paper", state: "default", context: undefined}, // bkg-paper-default
+    {type: "bkg", variant: undefined, item: "paper", state: "hushed", context: undefined}, // bkg-paper-hushed
+    {type: "bkg", variant: undefined, item: "paper", state: "muted", context: undefined}, // bkg-paper-muted
+
     //
     // Contextual specific always defines an 'item' or component it is created to be used for
     //
@@ -229,6 +242,7 @@ const CONTEXTUAL_TAXONOMY = [
 
 module.exports = {
     CATEGORY,
+    MODE,
 	SEMANTIC,
 	CONTEXTUAL,
 	SEMANTIC_TAXONOMY,

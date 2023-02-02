@@ -48,7 +48,14 @@ function palette() {
         destination: `colors/palette/${ENV.PREFIX}PaletteColors.${ext}`,
         format: format,
         filter: function (token) {
-            return token.attributes.taxonomy.category === CATEGORY.SEMANTIC
+
+            if (token.attributes.hasOwnProperty('taxonomy')) {
+                return token.attributes.taxonomy.category === CATEGORY.SEMANTIC
+            } else {
+                console.log("WHAT DOES NOT HAVE A TAXONOMY?", token)
+            }
+            return false
+
         }
     }
 }

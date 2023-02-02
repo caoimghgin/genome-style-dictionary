@@ -48,7 +48,9 @@ StyleDictionary.registerTransform({
     type: 'attribute',
     transformer: function (token) {
         const result = parseCtvAttributes(token)
-        token.path = ((result.path !== undefined) ? result.path : [result.taxonomy.system,...token.path])
+
+        // if I do this in the sub-routine, return the Object.assign, I can send back the entire token
+        token.path = ((result.path !== undefined) ? result.path : [...token.path])
         return Object.assign(result, token.attributes);
     }
 })
