@@ -1,8 +1,6 @@
 const { 
     parseAttributes, 
     CATEGORY,
-    SEMANTIC_TAXONOMY, 
-    CONTEXTUAL_TAXONOMY,
     SEMANTIC, 
     CONTEXTUAL,
 } = require("./utils")
@@ -14,14 +12,14 @@ module.exports = {
 
     getContextual: () => { 
         if (this.contextual === undefined) {
-            this.contextual = parseAttributes(CONTEXTUAL_TAXONOMY, CATEGORY.CONTEXTUAL)
+            this.contextual = parseAttributes(CONTEXTUAL, CATEGORY.CONTEXTUAL)
         }
         return this.contextual 
     },
 
     getSemantic: () => { 
         if (this.semantic === undefined) {
-            this.semantic = parseAttributes(SEMANTIC_TAXONOMY, CATEGORY.SEMANTIC)
+            this.semantic = parseAttributes(SEMANTIC, CATEGORY.SEMANTIC)
         }
         return this.semantic 
     },

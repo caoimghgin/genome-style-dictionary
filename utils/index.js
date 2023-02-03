@@ -4,13 +4,18 @@ const tinycolor = require('tinycolor2');
 const fs = require('fs');
 const _ = require("lodash");
 
+// console.log(CONTEXTUAL_TAXONOMY)
+// console.log(CONTEXTUAL)
+
+
 var self = module.exports = {
 
     CATEGORY,
     SEMANTIC_TAXONOMY,
     CONTEXTUAL_TAXONOMY,
-    CONTEXTUAL,
     SEMANTIC,
+    CONTEXTUAL,
+
 
     // An object which holds metaData needed to filter
     // and transform tokens into variables and files.

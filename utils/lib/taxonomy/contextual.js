@@ -16,7 +16,9 @@ const CONTEXTUAL = [
     {type: "bkg", variant: "primary", item: "button", state: "disabled", context: "onPaper"}, // bkg-primary-button-disabled-onPaper
 
     //
-    // Contextual non-specific does not define an item
+    // Contextual colors with "item: undefined" are non-specific to any particular component. These example
+    // tokens are for any typographic element. The state defines the contrast level and context describes the
+    // background the element is on. If the background is 'paper'. A "variant: undefined" assumes a neutral treatment.
     //
     {type: "txt", variant: undefined, item: undefined, state: "800", context: "onPaper"}, // -txt-800-onPaper
     {type: "txt", variant: undefined, item: undefined, state: "600", context: "onPaper"}, // -txt-600-onPaper
@@ -29,9 +31,9 @@ const CONTEXTUAL = [
     {type: "txt", variant: undefined, item: undefined, state: "200", context: "onLight"}, // -txt-200-onLight
 
     {type: "txt", variant: undefined, item: undefined, state: "800", context: "onDark"},  // -txt-800-onDark
-    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onDark"},  // -txt-800-onDark
-    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onDark"},  // -txt-800-onDark
-    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onDark"},  // -txt-800-onDark
+    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onDark"},  // -txt-600-onDark
+    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onDark"},  // -txt-400-onDark
+    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onDark"},  // -txt-200-onDark
 ]
 
 module.exports = { CONTEXTUAL }
