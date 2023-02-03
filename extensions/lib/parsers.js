@@ -16,4 +16,11 @@ they get to Style Dictionary. For example, you could modify the token object bas
 file path or programmatically generate tokens based on the data in certain files.
 */
 
-// TBD
+const StyleDictionary = require('style-dictionary');
+
+StyleDictionary.registerParser({
+    pattern: /\.json$/,
+    parse: ({ contents, filePath }) => {
+        return JSON.parse(contents);
+    }
+})

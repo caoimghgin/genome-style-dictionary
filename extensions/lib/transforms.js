@@ -21,13 +21,49 @@ see where this is applicable.
 */
 
 const StyleDictionary = require('style-dictionary');
-const { parseCtvAttributes, parseColorTaxonomy, nameFromPath, isColor } = require('./helpers')
+const { MODE } = require('../../utils/lib/constants')
+const { attributes, parseKey, parseBrand, isColor, isDefined } = require('../../utils');
+const { getContextual, getSemantic, tokenAttributesForKey } = require("../../app")
+const _ = require("lodash");
+
 
 /* 
 All pre-defined transforms included use the CTI structure for matching tokens. If your 
 design tokens are structured differently you will need to write custom transforms or 
 make sure the proper CTIs are on the attributes of your design tokens.
 */
+
+/*
+Add MetaData to attributes
+*/
+StyleDictionary.registerTransform({
+    name: `gnm/attribute/ctv`,
+    type: 'attribute',
+    transformer: function (token) {
+
+        let result = undefined
+
+        if (isColor(token.value)) {
+            result = tokenAttributesForKey(getSemantic(), parseKey(token))
+            if (!isDefined(result)) {
+                result = tokenAttributesForKey(getContextual(), parseKey(token))
+                if (isDefined(result)) {
+                    result.mode = token.path.includes("dark") ? MODE.DARK : MODE.LIGHT
+                }
+            }
+        }
+
+        if (isDefined(result)) {
+            token.path = result.path 
+        } else {
+            result = attributes() 
+            token.path.unshift(parseBrand(token))
+        }
+
+        return Object.assign(result, token.attributes);
+
+    }
+})
 
 /*
 Log to console the properties of tokens
@@ -37,21 +73,6 @@ StyleDictionary.registerTransform({
     type: 'attribute',
     transformer: function (token) {
         // console.log(token)
-    }
-})
-
-/*
-Add MetaData to attributes
-*/
-StyleDictionary.registerTransform({
-    name: `gnm/attribute/ctv`,
-    type: 'attribute',
-    transformer: function (token) {
-        const result = parseCtvAttributes(token)
-
-        // if I do this in the sub-routine, return the Object.assign, I can send back the entire token
-        token.path = ((result.path !== undefined) ? result.path : [...token.path])
-        return Object.assign(result, token.attributes);
     }
 })
 

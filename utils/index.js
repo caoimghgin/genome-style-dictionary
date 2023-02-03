@@ -1,10 +1,16 @@
+const { CATEGORY, SEMANTIC_TAXONOMY, CONTEXTUAL_TAXONOMY, CONTEXTUAL, SEMANTIC } = require('./lib/constants')
 const { ENV } = require('../package.json')
 const tinycolor = require('tinycolor2');
 const fs = require('fs');
-
 const _ = require("lodash");
 
 var self = module.exports = {
+
+    CATEGORY,
+    SEMANTIC_TAXONOMY,
+    CONTEXTUAL_TAXONOMY,
+    CONTEXTUAL,
+    SEMANTIC,
 
     // An object which holds metaData needed to filter
     // and transform tokens into variables and files.
@@ -59,16 +65,16 @@ var self = module.exports = {
             result.push(attr)
         });
         return result
-    }
+    },
 
-}
+    parseKey: (token) => {
+        return token.path.join('').toUpperCase()
+    },
 
-const parseAttributesPath = (obj) => {
-    let result = Object.keys(_.pickBy(obj.taxonomy, item => item !== undefined))
-        .map(function (key) {
-            return obj.taxonomy[key];
-        });
-    return result.length ? result : undefined
+    parseBrand: (token) => {
+        return token.filePath.split('/')[1]
+    },
+
 }
 
 const parseTaxonomyToPath = (obj) => {

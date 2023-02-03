@@ -1,24 +1,16 @@
-
-const { CATEGORY, SEMANTIC_TAXONOMY, CONTEXTUAL_TAXONOMY } = require('./lib/constants')
-const { parseAttributes } = require("./index")
+const { 
+    parseAttributes, 
+    CATEGORY,
+    SEMANTIC_TAXONOMY, 
+    CONTEXTUAL_TAXONOMY,
+    SEMANTIC, 
+    CONTEXTUAL,
+} = require("./utils")
 
 module.exports = {
 
     semantic: undefined,
     contextual: undefined,
-
-    // init: () => {
-
-    //     this.semantic = parseAttributes(SEMANTIC_TAXONOMY, CATEGORY.SEMANTIC)
-    //     this.contextual = parseAttributes(CONTEXTUAL_TAXONOMY, CATEGORY.CONTEXTUAL)
-
-    //     // const foundSemantic = this.semantic.filter(obj => obj.key.endsWith("PRIMARY015"));
-    //     // console.log("foundSemantic", foundSemantic)
-
-    //     // const foundContextual = this.contextual.filter(obj => obj.key.endsWith("TXT800ONLIGHT"));
-    //     // console.log("foundContextual", foundContextual)
-
-    // },
 
     getContextual: () => { 
         if (this.contextual === undefined) {

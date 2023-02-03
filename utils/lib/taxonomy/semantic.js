@@ -1,19 +1,4 @@
-const CONTEXTUAL = require('./taxonomy/contextual')
-const SEMANTIC = require('./taxonomy/semantic')
-
-const CATEGORY = Object.freeze({
-	SEMANTIC: "palette",
-	CONTEXTUAL: "color",
-    DEFINITIVE: "definitive",
-	TYPOGRAPHY: "typography",
-})
-
-const MODE = Object.freeze({
-	LIGHT: "light",
-	DARK: "dark"
-})
-
-const SEMANTIC_TAXONOMY = [
+const SEMANTIC = [
 
     {type: undefined, variant: "primary", item: undefined, state: "015", context: undefined}, // primary-015
     {type: undefined, variant: "primary", item: undefined, state: "025", context: undefined}, // primary-025
@@ -204,47 +189,4 @@ const SEMANTIC_TAXONOMY = [
 
 ]
 
-const CONTEXTUAL_TAXONOMY = [
-
-    //
-    // Contextual specific always defines an 'item' or component it is created to be used for
-    //
-    {type: "bkg", variant: undefined, item: "paper", state: "default", context: undefined}, // bkg-paper-default
-    {type: "bkg", variant: undefined, item: "paper", state: "hushed", context: undefined}, // bkg-paper-hushed
-    {type: "bkg", variant: undefined, item: "paper", state: "muted", context: undefined}, // bkg-paper-muted
-
-    //
-    // Contextual specific always defines an 'item' or component it is created to be used for
-    //
-    {type: "bkg", variant: "primary", item: "button", state: "default", context: "onPaper"}, // bkg-primary-button-default-onPaper
-    {type: "bkg", variant: "primary", item: "button", state: "hover", context: "onPaper"},   // bkg-primary-button-hover-onPaper
-    {type: "bkg", variant: "primary", item: "button", state: "active", context: "onPaper"},  // bkg-primary-button-active-onPaper
-    {type: "bkg", variant: "primary", item: "button", state: "disabled", context: "onPaper"}, // bkg-primary-button-disabled-onPaper
-
-    //
-    // Contextual non-specific does not define an item
-    //
-    {type: "txt", variant: undefined, item: undefined, state: "800", context: "onPaper"}, // -txt-800-onPaper
-    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onPaper"}, // -txt-600-onPaper
-    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onPaper"}, // -txt-200-onPaper
-    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onPaper"}, // -txt-200-onPaper
-
-    {type: "txt", variant: undefined, item: undefined, state: "800", context: "onLight"}, // -txt-800-onLight
-    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onLight"}, // -txt-600-onLight
-    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onLight"}, // -txt-400-onLight
-    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onLight"}, // -txt-200-onLight
-
-    {type: "txt", variant: undefined, item: undefined, state: "800", context: "onDark"},  // -txt-800-onDark
-    {type: "txt", variant: undefined, item: undefined, state: "600", context: "onDark"},  // -txt-800-onDark
-    {type: "txt", variant: undefined, item: undefined, state: "400", context: "onDark"},  // -txt-800-onDark
-    {type: "txt", variant: undefined, item: undefined, state: "200", context: "onDark"},  // -txt-800-onDark
-]
-
-module.exports = {
-    CATEGORY,
-    MODE,
-	SEMANTIC_TAXONOMY,
-	CONTEXTUAL_TAXONOMY,
-    SEMANTIC,
-    CONTEXTUAL,
-}
+module.exports = { SEMANTIC }
