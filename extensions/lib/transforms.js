@@ -21,11 +21,10 @@ see where this is applicable.
 */
 
 const StyleDictionary = require('style-dictionary');
-const { MODE } = require('../../utils/lib/constants')
-const { attributes, parseKey, parseBrand, isColor, isDefined } = require('../../utils');
-const { getContextual, getSemantic, tokenAttributesForKey } = require("../../app")
+const consts = require('../../utils/lib/constants')
+const utils = require('../../utils');
+const app = require("../../app")
 const _ = require("lodash");
-
 
 /* 
 All pre-defined transforms included use the CTI structure for matching tokens. If your 
@@ -41,26 +40,27 @@ StyleDictionary.registerTransform({
     type: 'attribute',
     transformer: function (token) {
 
-        let result = undefined
+        let properties = undefined
 
-        if (isColor(token.value)) {
-            result = tokenAttributesForKey(getSemantic(), parseKey(token))
-            if (!isDefined(result)) {
-                result = tokenAttributesForKey(getContextual(), parseKey(token))
-                if (isDefined(result)) {
-                    result.mode = token.path.includes("dark") ? MODE.DARK : MODE.LIGHT
+        if (utils.isColor(token.value)) {
+            properties = app.tokenPropertiesForKey(app.getSemantic(), utils.parseKey(token))
+            console.log(properties)
+            if (!utils.isValid(properties)) {
+                properties = app.tokenPropertiesForKey(app.getContextual(), utils.parseKey(token))
+                if (utils.isValid(properties)) {
+                    properties.mode = token.path.includes("dark") ? consts.MODE.DARK : consts.MODE.LIGHT
                 }
             }
         }
 
-        if (isDefined(result)) {
-            token.path = result.path 
+        if (utils.isValid(properties)) {
+            token.path = properties.path 
         } else {
-            result = attributes() 
-            token.path.unshift(parseBrand(token))
+            properties = utils.attributes() 
+            token.path.unshift(utils.parseBrand(token))
         }
 
-        return Object.assign(result, token.attributes);
+        return Object.assign(properties, token.attributes);
 
     }
 })

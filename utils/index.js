@@ -1,21 +1,9 @@
-const { CATEGORY, SEMANTIC_TAXONOMY, CONTEXTUAL_TAXONOMY, CONTEXTUAL, SEMANTIC } = require('./lib/constants')
 const { ENV } = require('../package.json')
 const tinycolor = require('tinycolor2');
 const fs = require('fs');
 const _ = require("lodash");
 
-// console.log(CONTEXTUAL_TAXONOMY)
-// console.log(CONTEXTUAL)
-
-
 var self = module.exports = {
-
-    CATEGORY,
-    SEMANTIC_TAXONOMY,
-    CONTEXTUAL_TAXONOMY,
-    SEMANTIC,
-    CONTEXTUAL,
-
 
     // An object which holds metaData needed to filter
     // and transform tokens into variables and files.
@@ -29,16 +17,17 @@ var self = module.exports = {
                 system: undefined,
                 category: undefined,
                 type: undefined,
-                variant: undefined,
                 item: undefined,
+                variant: undefined,
+                subitem: undefined,
                 state: undefined,
                 context: undefined,
             },
         }
     },
 
-    isDefined: (item) => {
-       return item === undefined ? false : true
+    isValid: (item) => {
+       return ((item === undefined) || (item == null)) ? false : true
     },
 
     // When tokens dir is populated with directories by brands

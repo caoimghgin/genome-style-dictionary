@@ -21,6 +21,10 @@ const StyleDictionary = require('style-dictionary');
 StyleDictionary.registerParser({
     pattern: /\.json$/,
     parse: ({ contents, filePath }) => {
+        // replace "$value" with "value" and "$description" with "comment"
+        // contents = contents.replace(/"$value"/g, '"value"').replace(/"$description"/g, '"comment"')
+        contents = contents.replace(/"description"/g, '"comment"')
+
         return JSON.parse(contents);
     }
 })
