@@ -56,7 +56,6 @@ StyleDictionary.registerTransform({
             token.path = properties.path 
         } else {
             properties = utils.attributes() 
-            console.log(properties)
             token.path.unshift(utils.parseBrand(token))
         }
 

@@ -50,9 +50,9 @@ var self = module.exports = {
         result = []
         taxonomy.forEach((item) => {
             let attr = self.attributes()
-            attr.taxonomy = { ...attr.taxonomy, ...item }
-            attr.taxonomy.system = `${ENV.PREFIX}`.toLowerCase()
-            attr.taxonomy.category = category
+            attr.taxonomy = item
+            // attr.taxonomy.system = `${ENV.PREFIX}`.toLowerCase()
+            // attr.taxonomy.category = category
             attr.name = parseTaxonomyToName(attr.taxonomy)
             attr.path = parseTaxonomyToPath(attr.taxonomy)
             attr.key = parseTaxonomyToKey(attr.taxonomy)
@@ -68,7 +68,6 @@ var self = module.exports = {
     parseBrand: (token) => {
         return token.filePath.split('/')[1]
     },
-
 }
 
 const parseTaxonomyToPath = (obj) => {
