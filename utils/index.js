@@ -1,4 +1,3 @@
-const { ENV } = require('../package.json')
 const tinycolor = require('tinycolor2');
 const fs = require('fs');
 const _ = require("lodash");
