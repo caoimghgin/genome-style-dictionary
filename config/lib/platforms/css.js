@@ -1,5 +1,6 @@
 const { ENV } = require('../../../package.json')
 const { CATEGORY } = require('../../../utils/lib/constants')
+const utils = require('../../../utils')
 
 const name = "css" // name defined in package.json/ENV/PLATFORMS array
 
@@ -66,7 +67,8 @@ function definitive(brand) {
         destination: `colors/definitive/${brand}DefinitiveColors.${ext}`,
         format: format,
         filter: function (token) {
-            return token.attributes.taxonomy.category === undefined
+            
+            return !utils.isValid(token.attributes.taxonomy.category)
         }
     }
 }

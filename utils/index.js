@@ -9,19 +9,19 @@ var self = module.exports = {
     // and transform tokens into variables and files.
     attributes: () => {
         return {
-            key: undefined,
-            name: undefined,
-            path: undefined,
-            mode: undefined,
+            key: null,
+            name: null,
+            path: null,
+            mode: null,
             taxonomy: {
-                system: undefined,
-                category: undefined,
-                type: undefined,
-                item: undefined,
-                variant: undefined,
-                subitem: undefined,
-                state: undefined,
-                context: undefined,
+                system: null,
+                category: null,
+                type: null,
+                item: null,
+                variant: null,
+                subitem: null,
+                state: null,
+                context: null,
             },
         }
     },
@@ -72,7 +72,7 @@ var self = module.exports = {
 }
 
 const parseTaxonomyToPath = (obj) => {
-    let result = Object.keys(_.pickBy(obj, item => item !== undefined))
+    let result = Object.keys(_.pickBy(obj, item => self.isValid(item)))
         .map(function (key) {
             return obj[key];
         });

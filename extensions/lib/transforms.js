@@ -44,7 +44,6 @@ StyleDictionary.registerTransform({
 
         if (utils.isColor(token.value)) {
             properties = app.tokenPropertiesForKey(app.getSemantic(), utils.parseKey(token))
-            console.log(properties)
             if (!utils.isValid(properties)) {
                 properties = app.tokenPropertiesForKey(app.getContextual(), utils.parseKey(token))
                 if (utils.isValid(properties)) {
@@ -57,6 +56,7 @@ StyleDictionary.registerTransform({
             token.path = properties.path 
         } else {
             properties = utils.attributes() 
+            console.log(properties)
             token.path.unshift(utils.parseBrand(token))
         }
 
