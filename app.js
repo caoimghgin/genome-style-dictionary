@@ -35,7 +35,7 @@ module.exports = {
         if (result.length === 1) return scrubber(result[0])
         if (result.length > 1) { 
             throw new Error(`"${result}" has more than one value for tokenAttributesForKey. 
-            One or more taxonomy definitions need to be unique.`);
+            All taxonomy definitions need to be unique.`);
         }
         return 
     },
@@ -44,7 +44,7 @@ module.exports = {
 
 const scrubber = (data) => {
     data.path = data.path.filter(function(value, index, arr){ 
-        return ((value !== "default") || (value !== "onLight"))
+        return (value !== "default") && (value !== "onPaper")
     });
     return data
 
