@@ -2,7 +2,13 @@ const tinycolor = require('tinycolor2');
 const fs = require('fs');
 const _ = require("lodash");
 
+const isValid = (item) => {
+    return ((item === undefined) || (item == null)) ? false : true
+}
+
 var self = module.exports = {
+
+    isValid,
 
     // An object which holds metaData needed to filter
     // and transform tokens into variables and files.
@@ -25,9 +31,9 @@ var self = module.exports = {
         }
     },
 
-    isValid: (item) => {
-       return ((item === undefined) || (item == null)) ? false : true
-    },
+    // isValid: (item) => {
+    //    return ((item === undefined) || (item == null)) ? false : true
+    // },
 
     // When tokens dir is populated with directories by brands
     // we can loop through each brand and generate tokens.
@@ -49,12 +55,10 @@ var self = module.exports = {
         result = []
         taxonomy.forEach((item) => {
             let attr = self.attributes()
-            attr.taxonomy = item
-            // attr.taxonomy.system = `${ENV.PREFIX}`.toLowerCase()
-            // attr.taxonomy.category = category
+            attr.taxonomy = item.value
             attr.name = parseTaxonomyToName(attr.taxonomy)
             attr.path = parseTaxonomyToPath(attr.taxonomy)
-            attr.key = parseTaxonomyToKey(attr.taxonomy)
+            attr.key = parseTaxonomyToKey(attr.taxonomy, item.key)
             result.push(attr)
         });
         return result
@@ -78,16 +82,21 @@ const parseTaxonomyToPath = (obj) => {
 }
 
 const parseTaxonomyToName = (obj) => {
-    let taxonomy = {...obj}
+    let taxonomy = { ...obj }
     delete taxonomy.system
     delete taxonomy.category
     return parseTaxonomyToPath(taxonomy).join('-')
 }
 
-const parseTaxonomyToKey = (obj) => {
-    let taxonomy = {...obj}
+const parseTaxonomyToKey = (obj, key) => {
+
+    if (isValid(key)) {return key.replace(/\s+/g, "").toUpperCase()}
+
+    let taxonomy = { ...obj }
     delete taxonomy.system
     delete taxonomy.category
-    let key = parseTaxonomyToPath(taxonomy).map(function (item) { return item.toUpperCase() })
-    return key.join("")
+    let result = parseTaxonomyToPath(taxonomy).map(function (item) { return item.toUpperCase() })
+    return result.join("")
+
 }
+
