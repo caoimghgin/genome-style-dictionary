@@ -1,6 +1,6 @@
 {
   "color" : {
-    "palette" : {
+    "semantic" : {
       "primary" : {
         "015" : {
           "description" : "$palette-primary-015 (A1)\n\nhex: : #F4F9FD\nL*: 97.66 (97.5)\n\n#FFFFFF-4.5:1: false\n#FFFFFF-3.0:1: false\n#000000-4.5:1: true\n#000000-3.0:1: true\n",

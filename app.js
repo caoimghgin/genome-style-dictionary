@@ -32,13 +32,21 @@ module.exports = {
     tokenPropertiesForKey: (data, key) => {
         const result = data.filter(obj => key.endsWith(obj.key))
         if (result.length === 0) return undefined
-        if (result.length === 1) return result[0]
+        if (result.length === 1) return scrubber(result[0])
         if (result.length > 1) { 
             throw new Error(`"${result}" has more than one value for tokenAttributesForKey. 
             One or more taxonomy definitions need to be unique.`);
         }
         return 
     },
+
+}
+
+const scrubber = (data) => {
+    data.path = data.path.filter(function(value, index, arr){ 
+        return ((value !== "default") || (value !== "onLight"))
+    });
+    return data
 
 }
 
