@@ -1,7 +1,8 @@
-const { PREFIX, CATEGORY } = require('./_index')
+const { CATEGORY, PREFIX } = require('./constants')
+
 const system_category = {system: PREFIX, category: CATEGORY.SEMANTIC}
 
-const SEMANTIC = [
+const PALETTE = [
         
     {key: null, value: {...system_category, type: null, item: null, variant: "primary", subitem: null, state: "015", context: null}}, // primary-015
     {key: null, value: {...system_category, type: null, item: null, variant: "primary", subitem: null, state: "025", context: null}}, // primary-025
@@ -191,4 +192,4 @@ const SEMANTIC = [
 
 ]
 
-module.exports = { SEMANTIC }
+module.exports = { PALETTE }
