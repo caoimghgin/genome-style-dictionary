@@ -9,21 +9,21 @@ module.exports = {
     //
     // Lazy load semantic taxonomy array into getter
     //
-    getSemantic: () => { 
+    getSemantic: () => {
         if (!utils.isValid(this.semantic)) {
             this.semantic = utils.parseAttributes(SEMANTIC, CATEGORY.SEMANTIC)
         }
-        return this.semantic 
+        return this.semantic
     },
 
     //
     // Lazy load contextual taxonomy array into getter
     //
-    getContextual: () => {         
+    getContextual: () => {
         if (!utils.isValid(this.contextual)) {
             this.contextual = utils.parseAttributes(CONTEXTUAL, CATEGORY.CONTEXTUAL)
         }
-        return this.contextual 
+        return this.contextual
     },
 
     //
@@ -33,17 +33,20 @@ module.exports = {
         const result = data.filter(obj => key.endsWith(obj.key))
         if (result.length === 0) return undefined
         if (result.length === 1) return scrubber(result[0])
-        if (result.length > 1) { 
+        if (result.length > 1) {
             throw new Error(`"${result}" has more than one value for tokenAttributesForKey. 
             All taxonomy definitions need to be unique.`);
         }
-        return 
+        return
     },
 
 }
 
+//
+// Remove default names to make variable names easier to read
+//
 const scrubber = (data) => {
-    data.path = data.path.filter(function(value, index, arr){ 
+    data.path = data.path.filter(function (value, index, arr) {
         return (value !== "default") && (value !== "onPaper")
     });
     return data

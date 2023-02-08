@@ -14,7 +14,7 @@
     "PREFIX": "GNM",
     "//PLATFORMS": ["css", "scss", "csms-scss", "csms-ios-plist", "js"],
     "///PLATFORMS": ["css", "scss", "js", "es6", "pList", "xml"],
-    "PLATFORMS": ["css"]
+    "PLATFORMS": ["style", "css"]
 
   },  
   "author": "Kevin Muldoon",

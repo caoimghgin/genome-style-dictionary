@@ -31,10 +31,6 @@ var self = module.exports = {
         }
     },
 
-    // isValid: (item) => {
-    //    return ((item === undefined) || (item == null)) ? false : true
-    // },
-
     // When tokens dir is populated with directories by brands
     // we can loop through each brand and generate tokens.
     getDirectories: (path) => {

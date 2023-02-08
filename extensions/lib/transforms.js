@@ -32,6 +32,35 @@ design tokens are structured differently you will need to write custom transform
 make sure the proper CTIs are on the attributes of your design tokens.
 */
 
+StyleDictionary.registerTransform({
+    name: `gnm/attribute/meta`,
+    type: 'attribute',
+    transformer: function (token) {
+
+        let properties = undefined
+
+        if (utils.isColor(token.value)) {
+            properties = app.tokenPropertiesForKey(app.getSemantic(), utils.parseKey(token))
+            if (!utils.isValid(properties)) {
+                properties = app.tokenPropertiesForKey(app.getContextual(), utils.parseKey(token))
+                if (utils.isValid(properties)) {
+                    properties.mode = token.path.includes("dark") ? consts.MODE.DARK : consts.MODE.LIGHT
+                }
+            }
+        }
+
+        if (utils.isValid(properties)) {
+            token.path = properties.path 
+        } else {
+            properties = utils.attributes() 
+            token.path.unshift(utils.parseBrand(token))
+        }
+
+        return Object.assign({$meta: {...properties}}, token);
+   
+    }
+})
+
 /*
 Add MetaData to attributes
 */
