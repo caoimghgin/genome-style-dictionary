@@ -1,4 +1,5 @@
-const { PREFIX, CATEGORY } = require('./_index')
+const { PREFIX, CATEGORY } = require('./constants')
+
 const system_category = {system: PREFIX, category: CATEGORY.CONTEXTUAL}
 
 const CONTEXTUAL = [

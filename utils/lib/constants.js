@@ -1,10 +1,23 @@
-const { CONTEXTUAL } = require('./taxonomy/contextual')
-const { SEMANTIC } = require('./taxonomy/semantic')
-const { MODE, CATEGORY } = require('./taxonomy/_index')
+const { ENV } = require('../../package.json')
+
+const CATEGORY = Object.freeze({
+	PALETTE: "palette",
+	CONTEXTUAL: "color",
+    DEFINITIVE: "definitive",
+	TYPOGRAPHY: "typography",
+})
+
+const PREFIX = Object.freeze(
+    ENV.PREFIX.toLowerCase()
+)
+
+const MODE = Object.freeze({
+	LIGHT: "light",
+	DARK: "dark"
+})
 
 module.exports = {
-    MODE,
     CATEGORY,
-    SEMANTIC,
-    CONTEXTUAL,
+    MODE,
+    PREFIX
 }

@@ -39,7 +39,7 @@ StyleDictionary.registerTransform({
 
         let properties = undefined
 
-        if (utils.isColor(token.value)) {
+        if (utils.isValidColor(token.value)) {
             properties = app.tokenPropertiesForKey(app.getSemantic(), utils.parseKey(token))
             if (!utils.isValid(properties)) {
                 properties = app.tokenPropertiesForKey(app.getContextual(), utils.parseKey(token))
@@ -52,7 +52,7 @@ StyleDictionary.registerTransform({
         if (utils.isValid(properties)) {
             token.path = properties.path 
         } else {
-            properties = utils.attributes() 
+            properties = utils.attributes 
             token.path.unshift(utils.parseBrand(token))
         }
 
@@ -71,7 +71,7 @@ StyleDictionary.registerTransform({
 
         let properties = undefined
 
-        if (utils.isColor(token.value)) {
+        if (utils.isValidColor(token.value)) {
             properties = app.tokenPropertiesForKey(app.getSemantic(), utils.parseKey(token))
             if (!utils.isValid(properties)) {
                 properties = app.tokenPropertiesForKey(app.getContextual(), utils.parseKey(token))
@@ -84,7 +84,7 @@ StyleDictionary.registerTransform({
         if (utils.isValid(properties)) {
             token.path = properties.path 
         } else {
-            properties = utils.attributes() 
+            properties = utils.attributes
             token.path.unshift(utils.parseBrand(token))
         }
 
