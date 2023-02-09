@@ -4,7 +4,7 @@ const { ENV } = require('./package.json')
 const { getDirectories } = require('./utils')
 require('./extensions')
 
-const brands = getDirectories(ENV.SOURCE_DIR)
+const brands = getDirectories(ENV.TOKENS_DIR)
 const platforms = ENV.PLATFORMS
 
 brands.map(brand => {

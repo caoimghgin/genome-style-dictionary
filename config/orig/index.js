@@ -4,9 +4,9 @@ module.exports = (brand, platform) => {
     
     return {
         "source": [
-            `${ENV.SOURCE_DIR}/brands/${brand}/*.json`,
-            `${ENV.SOURCE_DIR}/globals/**/*.json`,
-            `${ENV.SOURCE_DIR}/platforms/${platform}/*.json`
+            `${ENV.TOKENS_DIR}/brands/${brand}/*.json`,
+            `${ENV.TOKENS_DIR}/globals/**/*.json`,
+            `${ENV.TOKENS_DIR}/platforms/${platform}/*.json`
         ],
         "platforms": {
             "web/js": {
