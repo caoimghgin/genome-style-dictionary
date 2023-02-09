@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "ENV": {
-    "SOURCE_DIR": "tokens",
+    "TOKENS_DIR": "tokens",
     "BUILD_DIR": "build",
     "PREFIX": "GNM",
     "//PLATFORMS": ["css", "scss", "csms-scss", "csms-ios-plist", "js"],
