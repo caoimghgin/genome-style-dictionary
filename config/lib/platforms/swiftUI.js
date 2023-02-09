@@ -2,20 +2,22 @@ const { ENV } = require('../../../package.json')
 const { CATEGORY } = require('../../../utils/lib/constants')
 const utils = require('../../../utils')
 
-const name = "css" // name defined in package.json/ENV/PLATFORMS array
+const name = "swiftUI" // name defined in package.json/ENV/PLATFORMS array
 
 const transforms = [
     "attribute/cti",
     "gnm/attribute/ctv",
-    "name/cti/kebab",
-    "time/seconds",
-    "content/icon",
-    "size/rem",
-    "color/css",
+    "attribute/cti",
+    "name/cti/camel",
+    "color/UIColorSwift",
+    "content/swift/literal",
+    "asset/swift/literal",
+    "size/swift/remToCGFloat",
+    "font/swift/literal",
 ]
 const fileHeader = "gnm/header"
-const format = "css/variables"
-const ext = "css"
+const format = "ios-swift/any.swift"
+const ext = "swift"
 
 let result = {}
 
@@ -49,9 +51,13 @@ function palette() {
     return {
         destination: `colors/palette/${ENV.PREFIX}PaletteColors.${ext}`,
         format: format,
+        import: ['UIKit', 'OtherThink'],
+        objectType: 'struct',
+        accessControl: 'internal',
         filter: function (token) {
+
             if (token.attributes.hasOwnProperty('taxonomy')) {
-                return token.attributes.taxonomy.category === CATEGORY.PALETTE
+                return token.attributes.taxonomy.category === CATEGORY.SEMANTIC
             } else {
                 console.log("WHAT DOES NOT HAVE A TAXONOMY?", token)
             }
@@ -66,11 +72,7 @@ function definitive(brand) {
         destination: `colors/definitive/${brand}DefinitiveColors.${ext}`,
         format: format,
         filter: function (token) {
-            if ((token.attributes.taxonomy) ) {
             return (token.attributes.taxonomy.category) ? false : true
-            } else {
-                return false
-            }
         }
     }
 }
@@ -80,11 +82,7 @@ function contextualLight() {
         destination: `colors/contextual/light/${ENV.PREFIX}ContextualColors.${ext}`,
         format: format,
         filter: function (token) {
-            if ((token.attributes.taxonomy) &&  (token.attributes.mode)) {
-                return ((token.attributes.taxonomy.category === CATEGORY.CONTEXTUAL) && (token.attributes.mode === "light"))
-            } else {
-                return false
-            }
+            return ((token.attributes.taxonomy.category === CATEGORY.CONTEXTUAL) && (token.attributes.mode === "light"))
         }
     }
 }
@@ -94,12 +92,7 @@ function contextualDark() {
         destination: `colors/contextual/dark/${ENV.PREFIX}ContextualColors.${ext}`,
         format: format,
         filter: function (token) {
-            if ((token.attributes.taxonomy) &&  (token.attributes.mode)) {
-
             return ((token.attributes.taxonomy.category === CATEGORY.CONTEXTUAL) && (token.attributes.mode === "dark"))
-            } else {
-                return false
-            }
         }
     }
 }

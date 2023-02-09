@@ -1,6 +1,6 @@
 const { CATEGORY, PREFIX } = require('./constants')
 
-const system_category = {system: PREFIX, category: CATEGORY.SEMANTIC}
+const system_category = {system: PREFIX, category: CATEGORY.PALETTE}
 
 const PALETTE = [
         

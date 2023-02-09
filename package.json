@@ -13,8 +13,8 @@
     "BUILD_DIR": "build",
     "PREFIX": "GNM",
     "//PLATFORMS": ["css", "scss", "csms-scss", "csms-ios-plist", "js"],
-    "///PLATFORMS": ["css", "scss", "js", "es6", "pList", "xml"],
-    "PLATFORMS": ["style", "css"]
+    "///PLATFORMS": ["swiftUI", "style", "css", "scss", "js", "es6", "pList", "xml"],
+    "PLATFORMS": ["css", "style"]
 
   },  
   "author": "Kevin Muldoon",

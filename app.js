@@ -1,5 +1,7 @@
 const utils = require("./utils")
-const { CATEGORY, SEMANTIC, CONTEXTUAL } = require("./utils/lib/constants")
+const { CATEGORY } = require("./utils/lib/constants")
+const { PALETTE } = require("./utils/lib/palette")
+const { CONTEXTUAL } = require("./utils/lib/contextual")
 
 module.exports = {
 
@@ -10,8 +12,8 @@ module.exports = {
     // Lazy load semantic taxonomy array into getter
     //
     getSemantic: () => {
-        if (!utils.isValid(this.semantic)) {
-            this.semantic = utils.parseAttributes(SEMANTIC, CATEGORY.SEMANTIC)
+        if (!(this.semantic)) {
+            this.semantic = utils.parseAttributes(PALETTE, CATEGORY.SEMANTIC)
         }
         return this.semantic
     },
@@ -20,7 +22,7 @@ module.exports = {
     // Lazy load contextual taxonomy array into getter
     //
     getContextual: () => {
-        if (!utils.isValid(this.contextual)) {
+        if (!(this.contextual)) {
             this.contextual = utils.parseAttributes(CONTEXTUAL, CATEGORY.CONTEXTUAL)
         }
         return this.contextual

@@ -10,8 +10,8 @@ var tinycolor = require("tinycolor2")
 
 const _ = require('lodash');
 
-const attributes = {
-
+const attributes = () => {
+    return {
         key: null,
         name: null,
         path: null,
@@ -26,6 +26,7 @@ const attributes = {
             state: null,
             context: null,
         }
+    }
 
 }
 
@@ -48,16 +49,16 @@ const metaData = {
     }
 }
 
+const parseKey = (token) => {
+    return token.path.join('').toUpperCase()
+}
+
 const parseBrand = (token) => {
     return token.filePath.split('/')[1]
 }
 
-const isValid = (item) => {
-    return ((item === undefined) || (item == null)) ? false : true
-}
-
 const parseTaxonomyToPath = (obj) => {
-    let result = Object.keys(_.pickBy(obj, item => isValid(item)))
+    let result = Object.keys(_.pickBy(obj, item => (item ? true : false)))
         .map(function (key) {
             return obj[key];
         });
@@ -72,7 +73,7 @@ const parseTaxonomyToName = (obj) => {
 }
 
 const parseTaxonomyToKey = (obj, key) => {
-    if (isValid(key)) {return key.replace(/\s+/g, "").toUpperCase()}
+    if (key) { return key.replace(/\s+/g, "").toUpperCase() }
     let taxonomy = { ...obj }
     delete taxonomy.system
     delete taxonomy.category
@@ -83,7 +84,20 @@ const parseTaxonomyToKey = (obj, key) => {
 const parseAttributes = (taxonomy) => {
     result = []
     taxonomy.forEach((item) => {
-        let data = metaData()
+        let data = attributes()
+        data.taxonomy = item.value
+        data.name = parseTaxonomyToName(data.taxonomy)
+        data.path = parseTaxonomyToPath(data.taxonomy)
+        data.key = parseTaxonomyToKey(data.taxonomy, item.key)
+        result.push(data)
+    });
+    return result
+}
+
+const parseMetaData = (taxonomy) => {
+    result = []
+    taxonomy.forEach((item) => {
+        // let data = metaData
         data.$meta.taxonomy = item.value
         data.$meta.name = parseTaxonomyToName(data.$meta.taxonomy)
         data.$meta.path = parseTaxonomyToPath(data.$meta.taxonomy)
@@ -300,13 +314,13 @@ const isDefinitiveColor = (colorName) => {
     return ((result !== undefined) ? true : false)
 }
 
-const isValidColor = (prop) => {
-    const color = tinycolor(prop.value);
+const isValidColor = (value) => {
+    const color = tinycolor(value);
     return color.isValid()
 }
 
 module.exports = {
-    attributes, metaData, parseBrand, isValid, parseAttributes, getDirectories, removeDuplicateItems, removeExtraItems, defineAsPalette,
+    attributes, metaData, parseKey, parseBrand, parseAttributes, parseMetaData, getDirectories, removeDuplicateItems, removeExtraItems, defineAsPalette,
     normalizeBlackWhiteToken, normalizeSemanticToPaletteToken, normalizePathForBlackAndWhite,
     normalizePathToLowerCase, normalizePathForDuplicates, normalizePathForNewsKitPrefix,
     normalizePathForExcludedItems, normalizePathForSemanticColor, normalizePathForContextualColor,

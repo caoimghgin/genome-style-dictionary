@@ -6,8 +6,8 @@ const name = "style" // name defined in package.json/ENV/PLATFORMS array
 
 const transforms = [
     "attribute/cti",
-    "gnm/attribute/meta",
     "gnm/attribute/ctv",
+    // "gnm/attribute/meta",
 ]
 const fileHeader = "gnm/header"
 const format = "json"
